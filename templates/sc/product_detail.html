@@ -7,14 +7,12 @@
 
 
 {% block css %}
-<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css">
 {% end %}
 
 {% block javascript %}
-       <script src="{{ site_base }}/static/js/detalle-producto.js"></script>
-        <script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.js"></script>
+        <script src="{{ site_base }}/static/js/detalle-producto.js"></script>
 
-        <script type="text/x-template" id = "product_template" > </script>
+        <script type="text/x-template" id = "product_template" ></script>
 
         <script type="text/x-template" id="tag_template" >
         <li>
@@ -23,6 +21,62 @@
             </a>
         </li >
         </script>
+<!--         <script type="text/javascript">
+
+            function getCookie(cname)
+            {
+              var name = cname + "=";
+              var decodedCookie = decodeURIComponent(document.cookie);
+              var ca = decodedCookie.split(';');
+              for(var i = 0; i <ca.length; i++)
+              {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ')
+                    {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0)
+                    {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            $(document).ready(function()
+            {
+                var base_url = $.environmentVar(
+                    'https://apibodegas.loadingplay.com/',
+                    'https://apibodegas.loadingplay.com/',
+                    'https://apibodegas.loadingplay.com/');
+                var checkout_url = $.environmentVar(
+                    'https://pay.loadingplay.com',
+                    'https://pay.loadingplay.com',
+                    'https://pay.loadingplay.com');
+                var app_public = $.environmentVar(69,69,69);
+                var site_name = $.environmentVar('vitrineate', 'vitrineate', 'vitrineate');
+
+                var options = {
+                    'app_public' : app_public,
+                    'base_url' : base_url,
+                    'checkout_url': checkout_url,
+                    'product_id' : {{ product_id }},
+                    'site_name': site_name,
+                    onLoad: function(product)
+                    {
+                        if(getCookie("stock") == "none")
+                        {
+                            $(".add-to-cart").html("AGOTADO");
+                            $(".add-to-cart").attr("disabled", true);
+                        }
+                    }
+
+                };
+
+                $('.product-detail').ecommerce('product_detail', options);
+            });
+
+        </script> -->
 
         <script type="text/javascript" >
             function getCookie(cname)
@@ -48,29 +102,6 @@
         {
             var base_url = 'https://apibodegas.loadingplay.com/',
                 checkout_url = 'https://pay.loadingplay.com';
-
-            function isLocalHost() {
-                return document.location.href.indexOf('localhost') != -1;
-            }
-
-            function isDevelopment() {
-                return document.location.href.indexOf('ondev.today') != -1;
-            }
-
-            // configure for each enviroment
-            if ( isLocalHost() )
-            {
-                base_url = 'https://apibodegas.loadingplay.com/',
-                checkout_url = 'https://pay.loadingplay.com';
-
-                // base_url = 'https://apibodegas.loadingplay.com/';
-                // checkout_url = 'https://pay.loadingplay.com/';
-            }
-            else if ( isDevelopment() )
-            {
-                base_url = 'https://apibodegas.loadingplay.com/',
-                checkout_url = 'https://pay.loadingplay.com';
-            }
 
             // initialize ecommerce
             var facade = $(document).ecommerce('product_detail',
@@ -145,28 +176,26 @@
                             <div class="main-price hidden-xs">
                                 <span style="font-size:30px;">{{! main_price|money }}</span>
                             </div>
-                            <button type="button" class="btn add-to-cart" style="background-color: rgba(0, 0, 0, 0.24);" product-upp="{{! upp }}" product-id="{{! id }}" product-name="{{! name }}" product-price="{{! main_price|money }}" product-sku="{{! sku }}" product-img="{{! images[0]['thumb_500'] }}"  lp-cart-add>Añadir al carro</button>
+                            <button 
+                             type="button" 
+                             class="btn add-to-cart btn-success" 
+                             style="background-color: rgba(0, 0, 0, 0.24);"
+                             id="open-cart" 
+                             data-toggle="modal" 
+                             data-target="#myModal" 
+                             product-upp="{{! upp }}" 
+                             product-name="{{! name }}" 
+                             product-price="{{! main_price }}" 
+                             product-sku="{{! sku }}" 
+                             product-id="{{! id }}" 
+                             product-img="{{! images[0]['thumb_500'] }}" 
+                             lp-cart-add>Comprar</button>
                         </div>
                     </form>
                     </div>
                 </div>
             </div>
 
-<!--             <div class="container-fluid text-center container-fluid-magle" style="display: inherit;">
-                    <div class="row">
-                            <div class="col-sm-8 mlb-text" style="float: none; margin: 30px auto;">
-                                    <p> <span>Magdalena Le Blanc</span> is a brand that seeks integration of crafts and
-                                        traditions of Chilean native people with contemporary textile design. The
-                                        project comes with a strong social sense, with the intention of <span> providing
-                                        employment for weavers and spinners in southern Chile</span>, rescuing the
-                                        textile art from their ancestors through design and manufacture of high
-                                        quality. With a strong commitment to the environment and the artisans,
-                                        we create unique pieces that <span>give identity to spaces.</span>
-                                    </p>
-                            </div>
-                    </div>
-            </div> -->
-<!-- <div style="clear:both;"></div> -->
 <div class="col-sm-12" style="padding-left: 0px;padding-right: 0px;" >
             <div class="container-fluid text-right container-fluid-magle" style="display: inherit; margin: 60px auto;">
                     <div class="row">
@@ -194,26 +223,10 @@
                                     <div class="col-sm-12 especial bkg"></div>
 
                                     <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item" style="left:0px;top:0%;">
-
-<!--                                     <img class="img-responsive show-hide"src="{{ site_base }}/static/img/mlb-aboutus-footer.png" style="left:0px">
-                                    <img class="img-responsive hide-show"src="{{ site_base }}/static/img/mlb-aboutus-footera.png" style="left:0px"> -->
                             </div>
                     </div>
 
             </div>
-<!--             <div class="container-fluid text-center container-fluid-magle" style="display: inherit; height: auto; padding: 80px 0px !important;">
-                    <div class="row">
-                            <div class="col-sm-8 mlb-text" style="float: none; margin: 30px auto;">
-                                    <h2>As a Gift</h2>
-                                    <p>___________</p>
-
-                                    <p> We have a package specially designed to
-                                        communicate the essence of our products,
-                                        making your gift something unique.
-                                    </p>
-                            </div>
-                    </div>
-            </div> -->
 
 </div>
         </div>

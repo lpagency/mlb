@@ -47,7 +47,9 @@
         <!-- autocomplete -->
         <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/js/plugins/selectize/selectize.css" />
         <!-- autocomplete -->
-        <link rel="stylesheet" href="common/js/plugins/loadingplay/fileuploader/dist/fileuploader.css">
+        <link rel="stylesheet" href="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.css">
+
+        <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css">
 
         <link rel="stylesheet" href="{{ site_base }}/common/css/editableimage.css">
 
@@ -183,25 +185,83 @@
         <!-- header fixed fin-->
 
             <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
+            <div align="center">
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ">Resumen de tu compra</h4>
+                            </div>
+                            <div class="modal-body mlb-btn">
+                                <div class="container-fluid cart-list" ng-controller="">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nombre</th>
+                                                        <th>Precio</th>
+                                                        <th class="">Cant</th>
+                                                        <th class="">Eliminar</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="shopping-cart">
+                                                </tbody>
+                                            </table>
+                                            <div class="checkout-form"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title ">Resumen de tu compra</h4>
-                  </div>
-                  <div class="modal-body mlb-btn">                                 
-                      {% include 'page/cart.html' %}
-                  </div>
-    <!--                         <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div> -->
-              </div>
+            <script type="text/x-template" id="shopping-cart-product">
+                <tr>
+                    <td class="vert-align text-left">{{! name }}</td>
+                    <td class="text-center2 vert-align">{{! price }}</td>
+                    <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
+                        <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
+                        {{! quantity }}
+                        <a href="#!" class="add-one" lp-cart-add-one="{{! id }}" >+</a>
+                    </td>
+                    <td class="remove-from-cart fri" lp-cart-remove="{{! id }}" aria-hidden="true"> X  </td>
+                    <td class="vert-align fri">
+                        <a class="borrarproducto" cart-id="">
+                            <i class="icon-close"></i>
+                        </a>
+                    </td>
+                </tr>
+            </script>
 
-          </div>
-      </div>
+            <script type="text/x-template" id="shopping-cart-total" >
+                <tr>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td id="total" colspan="3" class="text-left total-modal lib">{{! total|money }}</td>
+                    <td></td>
+                </tr>
+            </script>
+
+            <script type="text/x-template" id="shopping-cart-units-total" >
+                <span> {{! units_total }}</span>
+            </script>
+
+            <script type="text/x-template" id="shopping-cart-checkout-form" >
+                <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform">
+                    <input name="site_id" class="form-control required" type="hidden" value="3">
+                    <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
+                    <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn" style="background-color: rgba(0, 0, 0, 0.24);">Pagar</button>
+                    </div>
+                </form>
+            </script>
 
         {% block header %}{% end %}
         <!-- header -->
@@ -256,9 +316,11 @@
 
         <script type="text/javascript" src="{{ site_base }}/common/js/editableimage.js"></script>
 
-        <script type="text/javascript" src="common/js/plugins/loadingplay/fileuploader/dist/fileuploader.js"></script>
+        <script type="text/javascript" src="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.js"></script>
 
-        <script type="text/javascript" src="common/js/plugins/loadingplay/fileuploader/dist/fileuploader.min.js"></script>
+        <script type="text/javascript" src="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.min.js"></script>
+
+        <script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.js"></script>
 
         <script type="text/javascript" src="common/js/jquery.cookie.js"></script>
 
