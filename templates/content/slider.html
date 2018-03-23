@@ -269,10 +269,10 @@
                 <!-- banner 1 -->
                 <div class="image-upload">
                 <!-- id input debe ir en for de label -->
-                    <label for="img_banner_5">
+                    <label for="img_banner_piezeras">
                         <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
                     </label>
-                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_5" name="image" id="img_banner_5" >
+                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_piezeras" name="image" id="img_banner_piezeras" >
                 </div>
                 <!-- banner 2 -->
                 <div class="image-upload">
@@ -284,8 +284,8 @@
                 </div>
             {% end %}
             <div>
-            <img id="mlb_banner_5" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_5', 1) }}" data-original="{{ read_image(site.name + '_banner_5', 500) }}" />
-            <img id="mlb_banner_5a" class="img-responsive hide-show lazy" src="{{ read_image(site.name + '_banner_5a', 1) }}" data-original="{{ read_image(site.name + '_banner_5a', 500) }}" /> 
+            <!-- <img id="mlb_banner_piezeras" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_5', 1) }}" data-original="{{ read_image(site.name + '_banner_5', 500) }}" /> -->
+            <img id="mlb_banner_5a" class="img-responsive lazy" src="{{ read_image(site.name + '_banner_5a', 1) }}" data-original="{{ read_image(site.name + '_banner_5a', 500) }}" /> 
             </div>
 <!--             <img src="{{ site_base }}/static/img/mlb_005.png" class="img-responsive show-hide" alt="item">
             <img src="{{ site_base }}/static/img/mlb_005a.png" class="img-responsive hide-show" alt="item"> -->
