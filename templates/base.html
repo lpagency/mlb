@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
     <head>
@@ -29,54 +28,44 @@
         <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site_base }}/static/imgbt/ico/apple-touch-icon-120x120.png" type="image/png" />
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site_base }}/static/imgbt/ico/apple-touch-icon-152x152.png" type="image/png" />
         <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
-        <!-- <link rel="stylesheet" href="{{ site_base }}/static/css/custom_bootstrap.css"> -->
-        <!-- menu editor css -->
         <link rel="stylesheet" href="{{ site_base }}/static/menu/css/main.css" type="text/css">
         <link rel="stylesheet" href="{{ site_base }}/static/menu/css/wallop-slider--slide.css">
         <link rel="stylesheet" href="{{ site_base }}/static/menu/css/wallop-slider.css">
         <link rel="stylesheet" href="{{ site_base }}/static/menu/css/colpick.css">
         <!-- menu editor css -->
         <link rel="stylesheet" href="{{ site_base }}/static/css/menu-material-2.css">
-        <!-- <link rel="stylesheet" href="{{ site_base }}/static/css/store.css">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/simplePagination.css"> -->
         <link rel="stylesheet" href="{{ site_base }}/static/css/ligthbox-d.css">
         <link rel="stylesheet" href="{{ site_base }}/static/css/gallery.css">
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="{{ site_base }}/static/css/swiper.min.css">
-
         <!-- autocomplete -->
         <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/js/plugins/selectize/selectize.css" />
         <!-- autocomplete -->
         <link rel="stylesheet" href="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.css">
-
         <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css">
-
         <link rel="stylesheet" href="{{ site_base }}/common/css/editableimage.css">
 
-        {% block css %}{% end %}
+        {% block css %}
+        {% end %}
 
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <style> 
-        [data-sr] { visibility: hidden; } 
+        <style>
+        [data-sr] {
+            visibility: hidden;
+        }
         </style>
     </head>
+
     <body id="home">
         <!-- generar contenido y formularios -->
         <div id="menu_movil" class="descripcion_wrapper descripcion_opacity b_wrapper" style="display:none;">
             <div class="descripcion_cerrar">
-                <button id="tellmeboton2" style="font-size: 35px; color:gray !important"><i class="icon-remove"></i></button>
+                <button id="tellmeboton2" class="tellmebutton-2"><i class="icon-remove"></i></button>
             </div>
             <div class="descripcion_contenido">
                 {% include 'content/add_form.html' %}
             </div>
         </div>
-        <!-- generar contenido y formularios -->
         <div id="cuerpo" style="width: 100%">
-            <!-- editor menu -->
-            <!-- <button class="button-nav-toggle" style="width:40px;height:40px;"></button> -->
             <div class="menu">
                 <nav class="nav-main">
                     <div class="nav-container">
@@ -96,7 +85,6 @@
                                 <ul>
                                     <li class="menu-ti"> <a href="#" class="back"><strong>Logo</strong></a></li>
                                     <button class="btn-menu">Subir imagen</button>
-                                    <!-- <input class="" type="file" name="imagen" id="imagen" /> -->
                                 </ul>
                             </li>
                             <li class="menu-st">Contenedor</li>
@@ -113,13 +101,13 @@
                                 <a href="#">productos</a>
                                 <ul>
                                     <li class="menu-ti"> <a href="#" class="back"><strong>Productos</strong></a></li>
-                                    <li class="menu-te" style="float: left;width: 100%;height: 70px;">
-                                        <div class="" style="float:left;margin-top: 14px;width: 20px;height: auto;">X</div>
-                                        <div class="" style="float:left;float: left;width: 30px;height: auto;margin-top: 14px;">fila</div>
+                                    <li class="menu-te">
+                                        <div class="close-btn">X</div>
+                                        <div class="row-products">fila</div>
                                         <!-- slider -->
-                                        <div class="photo-slider wallop-slider wallop-slider--slide" style="float: right;width: 120px;height: auto;margin-right: 18px;">
-                                            <div style="width:100%; height:auto; overflow:hidden; position:relative;">
-                                                <ul class="wallop-slider__list" style="right:0; position: inherit; padding: 0px;width: 100%;">
+                                        <div class="photo-slider wallop-slider wallop-slider--slide slide-css">
+                                            <div class="slide-css-2">
+                                                <ul class="wallop-slider__list list-css">
                                                     <li class="wallop-slider__item wallop-slider__item--current"><img src="{{ site_base }}/static/menu/images/row1.png"></li>
                                                     <li class="wallop-slider__item"><img src="{{ site_base }}/static/menu/images/row2.png"></li>
                                                     <li class="wallop-slider__item"><img src="{{ site_base }}/static/menu/images/row3.png"></li>
@@ -131,9 +119,9 @@
                                                     <li class="wallop-slider__item"><img src="{{ site_base }}/static/menu/images/row9.png"></li>
                                                 </ul>
                                             </div>
-                                            <button class="wallop-slider__btn wallop-slider__btn--previous btn btn--previous wallop-btn-base" disabled style="top: 13px;left: -29px;">
+                                            <button class="wallop-slider__btn wallop-slider__btn--previous btn btn--previous wallop-btn-base base-btn" disabled>
                                             </button>
-                                            <button class="wallop-slider__btn wallop-slider__btn--next btn btn--next wallop-btn-base" style="top: 13px;right: -29px;">></button>
+                                            <button class="wallop-slider__btn wallop-slider__btn--next btn btn--next wallop-btn-base base-btn-2">></button>
                                         </div>
                                         <!-- slider -->
                                     </li>
@@ -153,65 +141,49 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="campo_guardar" style="bottom: 0;position: absolute;display:none;">
+                    <div class="campo_guardar save-field">
                         <input class="campo_guandar_input" type="text" placeholder="NOMBRE DISEÑO">
                         <button class="btn-menu">Guardar</button>
                     </div>
-                    <div class="campo_guardar" style="bottom: 0;position: absolute;">
+                    <div class="campo_guardar save-field-block">
                         <button class="btn-menu">actualizar</button>
                     </div>
                 </nav>
             </div>
         </div>
-        <!-- editor menu -->
-        <!-- header -->
-        <!-- header fixed inicio-->
         <div id="main-nav-fixed-navigation" class="fixed-menu-me">
             <div class="container-fluid-magle" style="display: block;">
-                <a href="{{ site_base }}" class="nav-brand" style="border:0px;text-align: left; ">
-                 <img class="mlb-logo-header" src="{{ read_image(site.name + '_logo_header') }}" class="img-responsive" alt="item">
-                    <!-- <img class="mlb-logo-header" src="{{ site_base }}/static/img/mlb_logo.jpg"> -->
+                <a href="{{ site_base }}" class="nav-brand brand-mlb">
+                    <img class="mlb-logo-header" src="{{ read_image(site.name + '_logo_header') }}" class="img-responsive" alt="item">
                 </a>
-                <!-- <div class="busqueda-movil-material hide-show">
-                    <i class="icon-search"></i>
-                </div> -->
-<!--                 <form action="{{ site_base }}/search" method="get">
-                    <input type="text" name="search_query" value="{% try %}{{ search_query }}{% except %}{% end %}" placeholder="BUSCAR" class="show-hide search-input" />
-                </form> -->
-
-                <!-- <i class="fa icon-shopping-cart " data-toggle="modal" data-target="#myModal" style="  color: black; float: right; font-size: 28px; padding: 4px; margin-left: 20px;"><span class="units-total">0</span></i> -->
             </div>
         </div>
-        <!-- header fixed fin-->
-
-            <!-- Modal -->
-            <div align="center">
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title ">Resumen de tu compra</h4>
-                            </div>
-                            <div class="modal-body mlb-btn">
-                                <div class="container-fluid cart-list" ng-controller="">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Nombre</th>
-                                                        <th>Precio</th>
-                                                        <th class="">Cant</th>
-                                                        <th class="">Eliminar</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="shopping-cart">
-                                                </tbody>
-                                            </table>
-                                            <div class="checkout-form"></div>
-                                        </div>
+        <div align="center">
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title ">Resumen de tu compra</h4>
+                        </div>
+                        <div class="modal-body mlb-btn">
+                            <div class="container-fluid cart-list" ng-controller="">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th class="">Cant</th>
+                                                    <th class="">Eliminar</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="shopping-cart">
+                                            </tbody>
+                                        </table>
+                                        <div class="checkout-form"></div>
                                     </div>
                                 </div>
                             </div>
@@ -219,202 +191,178 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <script type="text/x-template" id="shopping-cart-product">
+            <tr>
+                <td class="vert-align text-left">{{! name }}</td>
+                <td class="text-center2 vert-align">{{! price }}</td>
+                <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
+                    <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a> {{! quantity }}
+                    <a href="#!" class="add-one" lp-cart-add-one="{{! id }}">+</a>
+                </td>
+                <td class="remove-from-cart fri" lp-cart-remove="{{! id }}" aria-hidden="true"> X </td>
+                <td class="vert-align fri">
+                    <a class="borrarproducto" cart-id="">
+                        <i class="icon-close"></i>
+                    </a>
+                </td>
+            </tr>
+        </script>
+        <script type="text/x-template" id="shopping-cart-total">
+            <tr>
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td id="total" colspan="3" class="text-left total-modal lib">{{! total|money }}</td>
+                <td></td>
+            </tr>
+        </script>
+        <script type="text/x-template" id="shopping-cart-units-total">
+            <span> {{! units_total }}</span>
+        </script>
+        <script type="text/x-template" id="shopping-cart-checkout-form">
+            <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform">
+                <input name="site_id" class="form-control required" type="hidden" value="3">
+                <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
+                <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
+                <div class="form-group text-center">
+                    <button type="submit" class="btn" style="background-color: rgba(0, 0, 0, 0.24);">Pagar</button>
+                </div>
+            </form>
+        </script>
 
-            <script type="text/x-template" id="shopping-cart-product">
-                <tr>
-                    <td class="vert-align text-left">{{! name }}</td>
-                    <td class="text-center2 vert-align">{{! price }}</td>
-                    <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
-                        <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
-                        {{! quantity }}
-                        <a href="#!" class="add-one" lp-cart-add-one="{{! id }}" >+</a>
-                    </td>
-                    <td class="remove-from-cart fri" lp-cart-remove="{{! id }}" aria-hidden="true"> X  </td>
-                    <td class="vert-align fri">
-                        <a class="borrarproducto" cart-id="">
-                            <i class="icon-close"></i>
-                        </a>
-                    </td>
-                </tr>
-            </script>
+        {% block header %}
+        {% end %}
 
-            <script type="text/x-template" id="shopping-cart-total" >
-                <tr>
-                </tr>
-                <tr>
-                    <td>Total:</td>
-                    <td id="total" colspan="3" class="text-left total-modal lib">{{! total|money }}</td>
-                    <td></td>
-                </tr>
-            </script>
-
-            <script type="text/x-template" id="shopping-cart-units-total" >
-                <span> {{! units_total }}</span>
-            </script>
-
-            <script type="text/x-template" id="shopping-cart-checkout-form" >
-                <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform">
-                    <input name="site_id" class="form-control required" type="hidden" value="3">
-                    <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
-                    <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn" style="background-color: rgba(0, 0, 0, 0.24);">Pagar</button>
-                    </div>
-                </form>
-            </script>
-
-        {% block header %}{% end %}
-        <!-- header -->
         {% block body %}
         {% end %}
-        <!-- gif loading editableimage -->
         <img id="imgLOAD" width="50" height="50" src="{{ site_base }}/common/css/loading.gif" />
-
-        <!-- <script src="{{ site_base }}/static/js/rimages.js"></script> -->
-        <!--<script src="{{ site_base }}/static/js/fix_ie9.js"></script>-->
         <script type="text/javascript">
         var site_base = "{{ site_base }}"
         </script>
         <script type="text/javascript" src="{{ site_base }}/static/js/jquery-min.js"></script>
         <script type="text/javascript" src="{{ site_base }}/static/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
-        <!--<script src="{{ site_base }}/static/js/giani_functions.js"></script>-->
-        <!--<script src="{{ site_base }}/static/js/giani.js"></script>-->
-        <!-- bt inicio -->
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="{{ site_base }}/static/jsbt/placeholders.min.js"></script>
-        <!--<script type="text/javascript" src="{{ site_base }}/static/jsbt/custom.js"></script>-->
         <script type="text/javascript" src="{{ site_base }}/static/jsbt/ga.js"></script>
-        <!-- bt fin -->
-        <!-- menu editor js -->
-        <!--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
         <script src="{{ site_base }}/static/menu/js/modernizr.js"></script>
         <script src="{{ site_base }}/static/menu/js/main.js"></script>
         <script src="{{ site_base }}/static/menu/js/WallopSlider.js"></script>
         <script src="{{ site_base }}/static/menu/js/script.js"></script>
         <script src="{{ site_base }}/static/menu/js/colpick.js"></script>
-        <!-- swipper -->
-        <!-- Swiper JS -->
         <script src="{{ site_base }}/static/js/swiper.min.js"></script>
-        <!-- menu editor js -->
-        <!--<script src="{{ site_base }}/static/js/menu-material-2.js"></script>-->
-        <!--<script type="text/javascript" src="{{ site_base }}/static/js/ligthbox-d.js"></script>-->
-        <!-- js mlb -->
         <script type="text/javascript" src="{{ site_base }}/static/js/mlb.js"></script>
         <!-- js mlb -->
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="https://yandex.st/highlightjs/7.3/highlight.min.js"></script>
         <script type="text/javascript" src="{{ site_base }}/static/js/plugins/selectize/selectize.js"></script>
-        <script type="text/javascript" src="{{ site_base }}/static/js/plugins/loadingplay/imageupload.preview.js" ></script>
-        <script type="text/javascript" src="{{ site_base }}/static/js/plugins/jquery.maskedinput.min.js" ></script>
-        <script type="text/javascript" src="{{ site_base }}/static/js/me.js" ></script>
-
+        <script type="text/javascript" src="{{ site_base }}/static/js/plugins/loadingplay/imageupload.preview.js"></script>
+        <script type="text/javascript" src="{{ site_base }}/static/js/plugins/jquery.maskedinput.min.js"></script>
+        <script type="text/javascript" src="{{ site_base }}/static/js/me.js"></script>
         <!-- {%! if is_admin %} -->
-        <script type="text/javascript" src="{{ site_base }}/common/js/jquery.editable.js" ></script>
+        <script type="text/javascript" src="{{ site_base }}/common/js/jquery.editable.js"></script>
         <script type="text/javascript" src="{{ site_base }}/common/js/editabletext.js"></script>
         <!-- {%!  end %} -->
         <script type="text/javascript" src="{{ site_base }}/common/js/page_editable.js"></script>
-
         <script type="text/javascript" src="{{ site_base }}/common/js/editableimage.js"></script>
-
         <script type="text/javascript" src="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.js"></script>
-
         <script type="text/javascript" src="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.min.js"></script>
-
         <script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.js"></script>
-
         <script type="text/javascript" src="common/js/jquery.cookie.js"></script>
-
-        <script type="text/javascript" src="{{ site_base }}/static/js/plugins/jquery.lazyload.js" ></script>
-
+        <script type="text/javascript" src="{{ site_base }}/static/js/plugins/jquery.lazyload.js"></script>
         <script type="text/javascript">
-        $(function(){
-            $("img.lazy").lazyload({
-                effect : "fadeIn"
+            $(function()
+            {
+                $("img.lazy").lazyload({
+                    effect: "fadeIn"
+                });
             });
-        });
         </script>
 
+        {% block javascript %}
+        {% end %}
 
-        {% block javascript %}{% end %}
-
-        <!--<script type="text/javascript" src="{{ site_base }}/static/js/content/set_fixed.js"></script>-->
-        <!--<script type="text/javascript" src="{{ site_base }}/static/js/tags.js" ></script>-->
         <script type="text/javascript">
-        $('#picker').colpick({
-            flat: true,
-            layout: 'hex',
-            submit: 0
-        });
+            $('#picker').colpick(
+            {
+                flat: true,
+                layout: 'hex',
+                submit: 0
+            });
         </script>
         <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId: '348231912006000',
-                xfbml: true,
-                version: 'v2.1'
-            });
-        };
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+            window.fbAsyncInit = function()
+            {
+                FB.init({
+                    appId: '348231912006000',
+                    xfbml: true,
+                    version: 'v2.1'
+                });
+            };
+            (function(d, s, id)
+            {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
         </script>
-        <script type="text/javascript" src="{{ site_base }}/static/js/header.js" ></script>
+        <script type="text/javascript" src="{{ site_base }}/static/js/header.js"></script>
         <script src="{{ site_base }}/static/js/scrollReveal.min.js?ver=2.1.0"></script>
         <script type="text/javascript">
-        window.sr= new scrollReveal({ 
-            reset: true,
-            move:"20px" 
-        });
-    </script>
-    <!-- Initialize Swiper -->
-    <script>
-    setTimeout(function() {
-            var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            slidesPerView: 1,
-            paginationClickable: true,
-            spaceBetween: 0,
-            loop: true,
-            onSlideChangeStart: function (swiper) {
-                    if (swiper.activeIndex == 4){
-                        swiper.activeIndex=1;
+            window.sr = new scrollReveal({
+                reset: true,
+                move: "20px"
+            });
+        </script>
+        <!-- Initialize Swiper -->
+        <script>
+            setTimeout(function()
+            {
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    slidesPerView: 1,
+                    paginationClickable: true,
+                    spaceBetween: 0,
+                    loop: true,
+                    autoplay: 3000,
+                    onSlideChangeStart: function(swiper)
+                    {
+                        if (swiper.activeIndex == 4)
+                        {
+                            swiper.activeIndex = 1;
+                        }
+                    },
+                    onSlideChangeEnd: function(swiper)
+                    {
+                        swiper.onResize();
                     }
-                    //before Event use it for your purpose
-                },
-            onSlideChangeEnd: function (swiper) {
-                // console.log('slide change end - after');
-                // console.log(swiper);
-                // console.log(swiper.activeIndex);
-                //after Event use it for your purpose
-                // if (swiper.activeIndex == 1) {
-                //     //First Slide is active
-                //     console.log('First slide active')
-                // }
-                swiper.onResize();
-            }
-        });
-    }, 3000);
-    // setTimeout(function () {
-    //    swiper.reInit();
-    //   }, 500);
-    </script>
-    <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                });
+            }, 3000);
+        </script>
+        <script type="text/javascript">
+            (function(i, s, o, g, r, a, m)
+            {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', '{{ get_config("analytics") }}', 'auto');
-        ga('send', 'pageview');
-    </script>
+            ga('create', '{{ get_config("analytics") }}', 'auto');
+            ga('send', 'pageview');
+        </script>
     </body>
 </html>
