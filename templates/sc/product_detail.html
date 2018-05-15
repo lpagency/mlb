@@ -1,252 +1,159 @@
 {% extends "../base.html" %}
 
-
 {% block header %}
-{% include '../home/header.html' %}
+    {% include '../home/header.html' %}
 {% end %}
-
 
 {% block css %}
 {% end %}
 
 {% block javascript %}
-        <script src="{{ site_base }}/static/js/detalle-producto.js"></script>
-
-        <script type="text/x-template" id = "product_template" ></script>
-
-        <script type="text/x-template" id="tag_template" >
+    <script src="{{ site_base }}/static/js/detalle-producto.js"></script>
+    <script type="text/x-template" id="product_template"></script>
+    <script type="text/x-template" id="tag_template">
         <li>
-            <a href="/sample/tag.html?tag={{! id }}" >
-            {{!name}}
-            </a>
-        </li >
-        </script>
-<!--         <script type="text/javascript">
-
-            function getCookie(cname)
+            <a href="/sample/tag.html?tag={{! id }}">
+                {{!name}}
+                </a>
+        </li>
+    </script>
+    <script type="text/javascript">
+        function getCookie(cname)
+        {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++)
             {
-              var name = cname + "=";
-              var decodedCookie = decodeURIComponent(document.cookie);
-              var ca = decodedCookie.split(';');
-              for(var i = 0; i <ca.length; i++)
-              {
-                    var c = ca[i];
-                    while (c.charAt(0) == ' ')
-                    {
-                        c = c.substring(1);
-                    }
-                    if (c.indexOf(name) == 0)
-                    {
-                        return c.substring(name.length, c.length);
-                    }
+                var c = ca[i];
+                while (c.charAt(0) == ' ')
+                {
+                    c = c.substring(1);
                 }
-                return "";
-            }
-
-            $(document).ready(function()
-            {
-                var base_url = $.environmentVar(
-                    'https://apibodegas.loadingplay.com/',
-                    'https://apibodegas.loadingplay.com/',
-                    'https://apibodegas.loadingplay.com/');
-                var checkout_url = $.environmentVar(
-                    'https://pay.loadingplay.com',
-                    'https://pay.loadingplay.com',
-                    'https://pay.loadingplay.com');
-                var app_public = $.environmentVar(69,69,69);
-                var site_name = $.environmentVar('vitrineate', 'vitrineate', 'vitrineate');
-
-                var options = {
-                    'app_public' : app_public,
-                    'base_url' : base_url,
-                    'checkout_url': checkout_url,
-                    'product_id' : {{ product_id }},
-                    'site_name': site_name,
-                    onLoad: function(product)
-                    {
-                        if(getCookie("stock") == "none")
-                        {
-                            $(".add-to-cart").html("AGOTADO");
-                            $(".add-to-cart").attr("disabled", true);
-                        }
-                    }
-
-                };
-
-                $('.product-detail').ecommerce('product_detail', options);
-            });
-
-        </script> -->
-
-        <script type="text/javascript" >
-            function getCookie(cname)
-            {
-              var name = cname + "=";
-              var decodedCookie = decodeURIComponent(document.cookie);
-              var ca = decodedCookie.split(';');
-              for(var i = 0; i <ca.length; i++)
-              {
-                    var c = ca[i];
-                    while (c.charAt(0) == ' ')
-                    {
-                        c = c.substring(1);
-                    }
-                    if (c.indexOf(name) == 0)
-                    {
-                        return c.substring(name.length, c.length);
-                    }
+                if (c.indexOf(name) == 0)
+                {
+                    return c.substring(name.length, c.length);
                 }
-                return "";
             }
+            return "";
+        }
         $(document).ready(function()
         {
             var base_url = 'https://apibodegas.loadingplay.com/',
                 checkout_url = 'https://pay.loadingplay.com';
 
             // initialize ecommerce
-            var facade = $(document).ecommerce('product_detail',
+            var facade = $(document).ecommerce('product_detail', {
+                'app_public': 3,
+                'site_id': 3,
+                'base_url': base_url,
+                'checkout_url': checkout_url,
+                'product_id': {{ product_id }},
+                'site_name': 'mlb',
+                onLoad: function(product) 
                 {
-                    'app_public' : 3,
-                    'site_id': 3,
-                    'base_url' : base_url,
-                    'checkout_url': checkout_url,
-                    'product_id' : {{ product_id }},
-                    'site_name': 'mlb',
-                    onLoad: function(product)
-                        {
-                            if(getCookie("stock") == "none")
-                            {
-                                $(".add-to-cart").html("AGOTADO");
-                                $(".add-to-cart").attr("disabled", true);
-                            }
-                        }
-                });
-            // $(document).on('click','.swiper-button-next', function(){
-            //     setTimeout(function () {
-            //        swiper.reInit();
-            //       }, 500);
-            // });
+                    if (getCookie("stock") == "none")
+                    {
+                        $(".add-to-cart").html("AGOTADO");
+                        $(".add-to-cart").attr("disabled", true);
+                    }
+                }
+            });
         });
-        </script>
-
-        <div type="template" id="product_detail" class="hidden" >
-            <div class="container-fluid-product product" style="text-align:left;" >
-                <div class="row visible-xs product-mobile" style="color: black;">
-                    <div class="col-xs-12 text-center tit-mobile info-product-detail">
-                        <h2 class="product-title" >{{! name }}</h2><br>
-                        <div class="main-price">
-                            <span style="font-size:30px;">{{! main_price|money }}</span>
-                        </div><br>
+    </script>
+    <div type="template" id="product_detail" class="hidden">
+        <div class="container-fluid-product product" style="text-align:left;">
+            <div class="row visible-xs product-mobile" style="color: black;">
+                <div class="col-xs-12 text-center tit-mobile info-product-detail">
+                    <h2 class="product-title">{{! name }}</h2>
+                    <br>
+                    <div class="main-price">
+                        <span style="font-size:30px;">{{! main_price|money }}</span>
                     </div>
+                    <br>
                 </div>
-                <div class="row slider-detail" >
-                    <div class="col-sm-8 ">
-                        <div class="mlb-content-img-prod">
-                            <div class="swiper-container" style="height: 440px;" >
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
-                                    </div>
+            </div>
+            <div class="row slider-detail">
+                <div class="col-sm-8 ">
+                    <div class="mlb-content-img-prod">
+                        <div class="swiper-container" style="height: 440px;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
                                 </div>
                             </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination" style="position: relative;"></div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination" style="position: relative;"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="col-sm-4">
+                </div>
+                <div class="col-sm-4">
                     <form action="product1.html" method="POST" class="myform">
                         <div class="fondo-blanco-movil info-product-detail">
                             <h2 class="product-title hidden-xs">{{! name }}</h2>
-<!--                             <p class="product-title bullet">
-                                {{! bullet_1 }}<br/>
-                                {{! bullet_2}}
-                            </p> -->
                             <div class="product-detail description">
                                 <p>{{! description }}</p>
                             </div>
                             <div class="main-price hidden-xs">
                                 <span style="font-size:30px;">{{! main_price|money }}</span>
                             </div>
-                            <!-- <button 
-                             type="button" 
-                             class="btn add-to-cart btn-success" 
-                             style="background-color: rgba(0, 0, 0, 0.24);"
-                             id="open-cart" 
-                             data-toggle="modal" 
-                             data-target="#myModal" 
-                             product-upp="{{! upp }}" 
-                             product-name="{{! name }}" 
-                             product-price="{{! main_price }}" 
-                             product-sku="{{! sku }}" 
-                             product-id="{{! id }}" 
-                             product-img="{{! images[0]['thumb_500'] }}" 
-                             lp-cart-add>Comprar</button> -->
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-no-padding">
+            <div class="container-fluid text-right container-fluid-magle text-you-know">
+                <div class="row">
+                    <div class="col-sm-6 mlb-text especial you-know">
+                        <div class="col-sm-12 especial">
+                            <h2>SABÍAS QUE</h2>
+                            <p>___________</p>
+                            <p>{{! bullet_1 }}</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mlb-text especial" style="height:400px;">
+                        <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
                     </div>
                 </div>
             </div>
-
-<div class="col-sm-12" style="padding-left: 0px;padding-right: 0px;" >
-            <div class="container-fluid text-right container-fluid-magle" style="display: inherit; margin: 60px auto;">
-                    <div class="row">
-                            <div class="col-sm-6 mlb-text especial" style="padding-right: 40px !important; margin-bottom: 40px;">
-                                <div class="col-sm-12 especial">
-                                    <h2>NUESTRA PROPUESTA</h2>
-                                    <p>___________</p>
-                                    <p>{{! bullet_1 }}</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mlb-text especial" style="height:400px;">
-                                    <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
-                            </div>
-                    </div>
-            </div>
             <div class="productlist">
                 <div class="row">
-                            <div class="col-sm-12 especial mlb-aboutus-footer" style="padding-bottom: 0px";>
-                                    <div class="col-sm-6 mlb-text" style="float: none; margin: 30px auto; color: white;" >
-                                        <h2>HECHO EN CHILE</h2>
-                                        <p>___________</p>
-                                        <p> {{! bullet_2 }}
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-12 especial bkg"></div>
-
-                                    <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item" style="left:0px;top:0%;">
-                            </div>
+                    <div class="col-sm-12 especial mlb-aboutus-footer" style="padding-bottom: 0px" ;>
+                        <div class="col-sm-6 mlb-text made-in-chile">
+                            <h2>HECHO EN CHILE</h2>
+                            <p>___________</p>
+                            <p> {{! bullet_2 }}
+                            </p>
+                        </div>
+                        <div class="col-sm-12 especial bkg"></div>
+                        <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item" style="left:0px;top:0%;">
                     </div>
-
+                </div>
             </div>
-
-</div>
         </div>
-
-
+    </div>
 {% end %}
 
-
 {% block body %}
-        <div class="container top-distance-content container-fluid-product product-detail-container especial" style="margin-left: 0px; margin-right: 0px; width: auto;" >
-            <div class="spinner">
-                <div class="rect1"></div>
-                <div class="rect2"></div>
-                <div class="rect3"></div>
-                <div class="rect4"></div>
-                <div class="rect5"></div>
-            </div>
+    <div class="container top-distance-content container-fluid-product product-detail-container especial container-product-detail">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
         </div>
+    </div>
 
-
-        {% include '../content/footer.html' %}
-
+    {% include '../content/footer.html' %}
 {% end %}
