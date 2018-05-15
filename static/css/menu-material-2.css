@@ -37,6 +37,49 @@
     background-size: 100%;
 }
 
+.col-no-padding
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.no-padding-bottom
+{
+    padding-bottom: 0px;
+}
+
+.made-in-chile
+{
+    float: none;
+    margin: 30px auto;
+    color: white;
+}
+
+.container-product-detail
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto;
+}
+
+.text-you-know
+{
+    display: inherit;
+    margin: 60px auto;
+}
+
+.footer-direccion
+{
+    position: relative;
+    top: 30px;
+}
+
+.you-know
+{
+    padding-right: 40px !important;
+    margin-bottom: 40px;
+}
+
 .p-margin
 {
     margin:0px 0px 3px;
