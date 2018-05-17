@@ -993,6 +993,11 @@ a.nav-icon-outline:hover
     transition: all 0.3s ease;
 }
 
+#wrap-2
+{
+    padding-top: 149px;
+}
+
 .menu-open
 {
     -webkit-transform: translate3d(-240px, 0, 0) scale3d(1, 1, 1);
@@ -1981,7 +1986,7 @@ blockquote .small
 
 .top-distance-content
 {
-    padding-top: 149px;
+    padding-top: 165px;
     margin-bottom: 50px;
 }
 
@@ -2481,6 +2486,16 @@ blockquote .small
     #wrap
     {
         padding-top: 5px;
+    }
+
+    #wrap-2
+    {
+        padding-top: 73px;
+    }
+
+    .top-distance-content
+    {
+        padding-top: 63px;
     }
 }
 
