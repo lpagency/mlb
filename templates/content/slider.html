@@ -6,7 +6,7 @@
     </div>
     <div class="col-xs-10 col-md-6 mlb-register-content col-md-offset-3 col-xs-offset-1">
         <div class="col-sm-12 especial bg-black-magle">
-            <img src="{{ site_base }}/static/img/mlb_logo_b.jpg" style="max-height: 50px; max-width: 100%">
+            <img src="{{ site_base }}/{{ nocache_static }}/img/mlb_logo_b.jpg" style="max-height: 50px; max-width: 100%">
         </div>
         <div class="g-header-form">
             <div class="mlb-header-button mlb-header-button-active">
@@ -29,7 +29,7 @@
         </div>
         <div class="col-sm-6 especial">
             <div class="col-sm-12 " style="padding: 0px 30px;">
-                <a href=""><img class=""src="{{ site_base }}/static/img/facebook.png" style="width: 130px;" ></a>
+                <a href=""><img class=""src="{{ site_base }}/{{ nocache_static }}/img/facebook.png" style="width: 130px;" ></a>
                 <label class="control-label" style="width: 100%; text-align: center; color: gray;">sign in with facebook</label>
             </div>
         </div>        
@@ -51,7 +51,7 @@
                 <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                     <label for="img_banner_1">
-                        <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                        <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_1" name="image" id="img_banner_1" >
                 </div>
@@ -59,7 +59,7 @@
                 <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                     <label for="img_banner_1a">
-                        <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                        <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_1a" name="image" id="img_banner_1a" >
                 </div>
@@ -91,7 +91,7 @@
             <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_9">
-                <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_9" name="image" id="img_banner_9" >
             </div>
@@ -99,7 +99,7 @@
             <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_9a">
-                    <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                    <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_9a" name="image" id="img_banner_9a" >
             </div>
@@ -107,8 +107,8 @@
             <img id="mlb_banner_9" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_9') }}" data-original="{{ read_image(site.name + '_banner_9') }}" />
             <img id="mlb_banner_9a" class="img-responsive hide-show lazy" src="{{ read_image(site.name + '_banner_9a') }}" data-original="{{ read_image(site.name + '_banner_9a') }}"/>
               
-  <!--           <img class="img-responsive show-hide" src="{{ site_base }}/static/img/mlb_009.png">
-            <img class="img-responsive hide-show" src="{{ site_base }}/static/img/mlb_009a.png"> -->
+  <!--           <img class="img-responsive show-hide" src="{{ site_base }}/{{ nocache_static }}/img/mlb_009.png">
+            <img class="img-responsive hide-show" src="{{ site_base }}/{{ nocache_static }}/img/mlb_009a.png"> -->
             <div class="info-product banner-principal banner-principal-product">
                 <h2>
                 {% if is_admin %}
@@ -134,14 +134,14 @@
             <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_10">
-                <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_10" name="image" id="img_banner_10" />
             </div>
             <!-- banner 2 -->
             <div class="image-upload">
                 <label for="img_banner_10a">
-                    <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                    <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_10a" name="image" id="img_banner_10a">
             </div>
@@ -181,7 +181,7 @@
             {% if is_admin %}
             <div class="image-upload">
                 <label for="img_banner_2">
-                <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_2" name="image" id="img_banner_2" >
             </div>
@@ -209,13 +209,13 @@
             {% if is_admin %}
             <div class="image-upload">
                 <label for="img_banner_3">
-                <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_3" name="image" id="img_banner_3" >
             </div>
             {% end %}
             <img id="mlb_banner_3" src="{{ read_image(site.name + '_banner_3', 1) }}" data-original="{{ read_image(site.name + '_banner_3', 200) }}" class="img-responsive lazy" alt="item" style="height: 100%;">
-            <!-- <img src="{{ site_base }}/static/img/mlb_003.png" class="img-responsive" alt="item"> -->
+            <!-- <img src="{{ site_base }}/{{ nocache_static }}/img/mlb_003.png" class="img-responsive" alt="item"> -->
             <div class="info-article">
                 <h2>{% if is_admin %}
                 <span class="editabletext" text-id="{{ site.name + '_banner3_tit' }}" >{{ read_text(site.name + '_banner3_tit') }}</span>
@@ -236,13 +236,13 @@
             {% if is_admin %}
             <div class="image-upload">
                 <label for="img_banner_4">
-                <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_4" name="image" id="img_banner_4" >
             </div>
             {% end %}
             <img id="mlb_banner_4" src="{{ read_image(site.name + '_banner_4', 1) }}" data-original="{{ read_image(site.name + '_banner_4', 200) }}" class="img-responsive lazy" alt="item" style="height: 100%;">
-            <!-- <img src="{{ site_base }}/static/img/mlb_004.png" class="img-responsive" alt="item"> -->
+            <!-- <img src="{{ site_base }}/{{ nocache_static }}/img/mlb_004.png" class="img-responsive" alt="item"> -->
             <div class="info-product color-white">
                 <h2>{% if is_admin %}
                 <span class="editabletext" text-id="{{ site.name + '_banner4_tit' }}" >{{ read_text(site.name + '_banner4_tit') }}</span>
@@ -270,7 +270,7 @@
                 <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                     <label for="img_banner_piezeras">
-                        <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                        <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_piezeras" name="image" id="img_banner_piezeras" >
                 </div>
@@ -278,7 +278,7 @@
                 <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                     <label for="img_banner_5a">
-                        <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                        <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_5a" name="image" id="img_banner_5a" >
                 </div>
@@ -287,8 +287,8 @@
             <!-- <img id="mlb_banner_piezeras" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_5', 1) }}" data-original="{{ read_image(site.name + '_banner_5', 500) }}" /> -->
             <img id="mlb_banner_5a" class="img-responsive lazy piezeras" src="{{ read_image(site.name + '_banner_5a', 1) }}" data-original="{{ read_image(site.name + '_banner_5a', 500) }}" /> 
             </div>
-<!--             <img src="{{ site_base }}/static/img/mlb_005.png" class="img-responsive show-hide" alt="item">
-            <img src="{{ site_base }}/static/img/mlb_005a.png" class="img-responsive hide-show" alt="item"> -->
+<!--             <img src="{{ site_base }}/{{ nocache_static }}/img/mlb_005.png" class="img-responsive show-hide" alt="item">
+            <img src="{{ site_base }}/{{ nocache_static }}/img/mlb_005a.png" class="img-responsive hide-show" alt="item"> -->
             <div class="info-product banner-secundario color-white">
                 <h2>{% if is_admin %}
                 <span class="editabletext" text-id="{{ site.name + '_banner5_tit' }}" >{{ read_text(site.name + '_banner5_tit') }}</span>
@@ -315,7 +315,7 @@
                 <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                     <label for="img_banner_6">
-                        <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                        <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_6" name="image" id="img_banner_6" >
                 </div>
@@ -323,7 +323,7 @@
                 <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                     <label for="img_banner_6a">
-                        <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                        <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_6a" name="image" id="img_banner_6a" >
                 </div>
@@ -332,8 +332,8 @@
                 <img id="mlb_banner_6" class="img-responsive show-hide mlb-img lazy" src="{{ read_image(site.name + '_banner_6', 1) }}" data-original="{{ read_image(site.name + '_banner_6', 500) }}" />
                 <img id="mlb_banner_6a" class="img-responsive hide-show mlb-img lazy" src="{{ read_image(site.name + '_banner_6a', 1) }}" data-original="{{ read_image(site.name + '_banner_6a', 500) }}" />
             </div>
-<!--             <img src="{{ site_base }}/static/img/mlb_006.png" class="img-responsive show-hide" alt="item">
-            <img src="{{ site_base }}/static/img/mlb_006a.png" class="img-responsive hide-show" alt="item"> -->
+<!--             <img src="{{ site_base }}/{{ nocache_static }}/img/mlb_006.png" class="img-responsive show-hide" alt="item">
+            <img src="{{ site_base }}/{{ nocache_static }}/img/mlb_006a.png" class="img-responsive hide-show" alt="item"> -->
             <div class="info-product">
                 <h2>{% if is_admin %}
                 <span class="editabletext" text-id="{{ site.name + '_banner6_tit' }}" >{{ read_text(site.name + '_banner6_tit') }}</span>
@@ -357,7 +357,7 @@
                 <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                     <label for="img_banner_7">
-                        <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                        <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_7" name="image" id="img_banner_7" >
                 </div>
@@ -365,7 +365,7 @@
                 <div class="image-upload">
                 <!-- id input debe ir en for de label -->
                     <label for="img_banner_7a">
-                        <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                        <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_7a" name="image" id="img_banner_7a" >
                 </div>
@@ -374,8 +374,8 @@
                 <img id="mlb_banner_7" class="img-responsive show-hide mlb-img lazy" src="{{ read_image(site.name + '_banner_7', 1) }}" data-original="{{ read_image(site.name + '_banner_7', 500) }}" />
                 <img id="mlb_banner_7a" class="img-responsive hide-show mlb-img lazy" src="{{ read_image(site.name + '_banner_7a', 1) }}" data-original="{{ read_image(site.name + '_banner_7a', 500) }}" />
             </div>
-            <!-- <img src="{{ site_base }}/static/img/mlb_007.png" class="img-responsive show-hide" alt="item">
-            <img src="{{ site_base }}/static/img/mlb_007a.png" class="img-responsive hide-show" alt="item"> -->
+            <!-- <img src="{{ site_base }}/{{ nocache_static }}/img/mlb_007.png" class="img-responsive show-hide" alt="item">
+            <img src="{{ site_base }}/{{ nocache_static }}/img/mlb_007a.png" class="img-responsive hide-show" alt="item"> -->
             <div class="info-article">
                 <h2>{% if is_admin %}
                 <span class="editabletext" text-id="{{ site.name + '_banner7_tit' }}" >{{ read_text(site.name + '_banner7_tit') }}</span>
@@ -421,7 +421,7 @@
                 <div class="image-upload" style="right:50px;">
                     <!-- id input debe ir en for de label -->
                     <label for="img_banner_living">
-                        <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';" >
+                        <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_living" name="image" id="img_banner_living" >
                 </div>
@@ -429,7 +429,7 @@
                 <div class="image-upload" style="right:50px;">
                     <!-- id input debe ir en for de label -->
                     <label for="img_banner_living_a">
-                        <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                        <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
                     <input type="file" class="editableimage" image-id="{{ site.name }}_banner_living_a" name="image" id="img_banner_living_a" >
                 </div>
@@ -438,8 +438,8 @@
                 <img id="mlb_banner_living" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_living', 1) }}" data-original="{{ read_image(site.name + '_banner_living', 500) }}" />
                 <img id="mlb_banner_living_a" class="img-responsive hide-show lazy" src="{{ read_image(site.name + '_banner_living_a', 1) }}" data-original="{{ read_image(site.name + '_banner_living_a', 500) }}" />
                 </div>
-        <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/static/img/mlb-aboutus-header.png">
-        <img class="img-responsive hide-show"src="{{ site_base }}/static/img/mlb-aboutus-headera.png"> -->
+        <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-header.png">
+        <img class="img-responsive hide-show"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-headera.png"> -->
             </div>
         </div>
     </div>
@@ -484,7 +484,7 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_dinner">
-                    <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';" >
+                    <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_dinner" name="image" id="img_banner_dinner" >
             </div>
@@ -492,7 +492,7 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_dinner_a">
-                    <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                    <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_dinner_a" name="image" id="img_banner_dinner_a" >
             </div>
@@ -542,7 +542,7 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_kitchen">
-                    <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';" >
+                    <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_kitchen" name="image" id="img_banner_kitchen" >
             </div>
@@ -550,15 +550,15 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_kitchen_a">
-                    <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                    <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_kitchen_a" name="image" id="img_banner_kitchen_a" >
             </div>
             {% end %}
             <img id="mlb_banner_kitchen" class="img-responsive show-hide mlb-img lazy" src="{{ read_image(site.name + '_banner_kitchen', 1) }}" data-original="{{ read_image(site.name + '_banner_kitchen') }}" />
             <img id="mlb_banner_kitchen_a" class="img-responsive hide-show mlb-img lazy" src="{{ read_image(site.name + '_banner_kitchen_a', 1) }}" data-original="{{ read_image(site.name + '_banner_kitchen_a') }}" />
-    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/static/img/mlb-aboutus-header.png">
-    <img class="img-responsive hide-show"src="{{ site_base }}/static/img/mlb-aboutus-headera.png"> -->
+    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-header.png">
+    <img class="img-responsive hide-show"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-headera.png"> -->
         </div>
     </div>
 </div>
@@ -603,7 +603,7 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_bedroom">
-                    <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';" >
+                    <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_bedroom" name="image" id="img_banner_bedroom" >
             </div>
@@ -611,15 +611,15 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_bedroom_a">
-                    <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                    <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_bedroom_a" name="image" id="img_banner_bedroom_a" >
             </div>
             {% end %}
             <img id="mlb_banner_bedroom" class="img-responsive show-hide mlb-img lazy" src="{{ read_image(site.name + '_banner_bedroom', 1) }}" data-original="{{ read_image(site.name + '_banner_bedroom') }}" />
             <img id="mlb_banner_bedroom_a" class="img-responsive hide-show mlb-img lazy" src="{{ read_image(site.name + '_banner_bedroom_a', 1) }}" data-original="{{ read_image(site.name + '_banner_bedroom_a') }}" />
-    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/static/img/mlb-aboutus-header.png">
-    <img class="img-responsive hide-show"src="{{ site_base }}/static/img/mlb-aboutus-headera.png"> -->
+    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-header.png">
+    <img class="img-responsive hide-show"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-headera.png"> -->
         </div>
     </div>
 </div>
@@ -665,7 +665,7 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_piecera">
-                    <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';" >
+                    <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_piecera" name="image" id="img_banner_piecera" >
             </div>
@@ -673,15 +673,15 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_piecera_a">
-                    <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                    <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_piecera_a" name="image" id="img_banner_piecera_a" >
             </div>
             {% end %}
             <img id="mlb_banner_piecera" class="img-responsive show-hide mlb-img lazy" src="{{ read_image(site.name + '_banner_piecera', 1) }}" data-original="{{ read_image(site.name + '_banner_piecera') }}" />
             <img id="mlb_banner_piecera_a" class="img-responsive hide-show mlb-img lazy" src="{{ read_image(site.name + '_banner_piecera_a', 1) }}" data-original="{{ read_image(site.name + '_banner_piecera_a') }}" />
-    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/static/img/mlb-aboutus-header.png">
-    <img class="img-responsive hide-show"src="{{ site_base }}/static/img/mlb-aboutus-headera.png"> -->
+    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-header.png">
+    <img class="img-responsive hide-show"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-headera.png"> -->
         </div>
     </div>
 </div>
@@ -726,7 +726,7 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_revistero">
-                    <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';" >
+                    <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_revistero" name="image" id="img_banner_revistero" >
             </div>
@@ -734,15 +734,15 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_revistero_a">
-                    <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                    <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_revistero_a" name="image" id="img_banner_revistero_a" >
             </div>
             {% end %}
             <img id="mlb_banner_revistero" class="img-responsive show-hide mlb-img lazy" src="{{ read_image(site.name + '_banner_revistero', 1) }}" data-original="{{ read_image(site.name + '_banner_revistero') }}" />
             <img id="mlb_banner_revistero_a" class="img-responsive hide-show mlb-img lazy" src="{{ read_image(site.name + '_banner_revistero_a', 1) }}" data-original="{{ read_image(site.name + '_banner_revistero_a') }}" />
-    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/static/img/mlb-aboutus-header.png">
-    <img class="img-responsive hide-show"src="{{ site_base }}/static/img/mlb-aboutus-headera.png"> -->
+    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-header.png">
+    <img class="img-responsive hide-show"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-headera.png"> -->
         </div>
     </div>
 </div>
@@ -786,7 +786,7 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_vestuario">
-                    <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';" >
+                    <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_vestuario" name="image" id="img_banner_vestuario" >
             </div>
@@ -794,15 +794,15 @@
             <div class="image-upload" style="right:50px;">
                 <!-- id input debe ir en for de label -->
                 <label for="img_banner_vestuario_a">
-                    <img class="change-image hide-show" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';">
+                    <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                 </label>
                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_vestuario_a" name="image" id="img_banner_vestuario_a" >
             </div>
             {% end %}
             <img id="mlb_banner_vestuario" class="img-responsive show-hide mlb-img lazy" src="{{ read_image(site.name + '_banner_vestuario', 1) }}" data-original="{{ read_image(site.name + '_banner_vestuario') }}" />
             <img id="mlb_banner_vestuario_a" class="img-responsive hide-show mlb-img lazy" src="{{ read_image(site.name + '_banner_vestuario_a', 1) }}" data-original="{{ read_image(site.name + '_banner_vestuario_a') }}" />
-    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/static/img/mlb-aboutus-header.png">
-    <img class="img-responsive hide-show"src="{{ site_base }}/static/img/mlb-aboutus-headera.png"> -->
+    <!--                         <img class="img-responsive show-hide"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-header.png">
+    <img class="img-responsive hide-show"src="{{ site_base }}/{{ nocache_static }}/img/mlb-aboutus-headera.png"> -->
         </div>
     </div>
 </div>

@@ -3,12 +3,12 @@
     {{ site.name }}
 {% end %}
 {% block scripts %}
-    <script type="text/javascript" src="{{ site_base }}/static/js/plugins/jquery.lazyload.js"></script>
-    <script type="text/javascript" src="{{ site_base }}/static/js/imageloader.js" ></script>
+    <script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/plugins/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/imageloader.js" ></script>
     <!-- archivos para galería -->
-    <script src="{{ site_base }}/static/js/modernizr.custom.js"></script>
-    <script src="{{ site_base }}/static/js/jquery.instaheader.js"></script>
-    <link href="{{ site_base }}/static/css/jquery.instaheader.css" rel="stylesheet">
+    <script src="{{ site_base }}/{{ nocache_static }}/js/modernizr.custom.js"></script>
+    <script src="{{ site_base }}/{{ nocache_static }}/js/jquery.instaheader.js"></script>
+    <link href="{{ site_base }}/{{ nocache_static }}/css/jquery.instaheader.css" rel="stylesheet">
     <!-- archivos para galería -->
 {% end %}
 {% block header %}
