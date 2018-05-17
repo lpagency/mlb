@@ -28,16 +28,16 @@
         <div class="nav-header container-fluid-magle" style="text-align: left; display: block; ">
             <!--logo -->
             <a href="{{ site_base }}">
-            {% if is_admin %}
-            <div class="image-upload header">
-                <label for="img_logo_header">
-                    <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';" >
-                </label>
-                <input type="file" class="editableimage" image-id="{{ site.name }}_logo_header" name="image" id="img_logo_header" >
-            </div>
-            {% end %}
-            <img id="mlb_logo_header" class="mlb-logo-header" src="{{ read_image(site.name + '_logo_header') }}" class="img-responsive" alt="item">
-        </a>
+                {% if is_admin %}
+                    <div class="image-upload header">
+                        <label for="img_logo_header">
+                            <img class="change-image" src="{{ site_base }}/static/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/static/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/static/img/btn-edit.png';" >
+                        </label>
+                        <input type="file" class="editableimage" image-id="{{ site.name }}_logo_header" name="image" id="img_logo_header" >
+                    </div>
+                {% end %}
+                <img id="mlb_logo_header" class="mlb-logo-header" src="{{ read_image(site.name + '_logo_header') }}" class="img-responsive" alt="item">
+            </a>
         </div>
     </div>
     <!-- menu secundario -->
