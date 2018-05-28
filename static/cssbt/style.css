@@ -49,6 +49,11 @@ a:hover
     text-align: center;
 }
 
+.wrap-success
+{
+    padding-top: 164px;
+}
+
 .container-fluid
 {
     margin-right: auto;
