@@ -52,6 +52,20 @@ a:hover
 .wrap-success
 {
     padding-top: 164px;
+    min-height: 490px;
+    position: relative;
+    backface-visibility: hidden;
+    min-width: 100%;
+    z-index: 1030;
+    background-color: #FFF;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .container-fluid

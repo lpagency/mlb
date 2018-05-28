@@ -17,18 +17,11 @@
     {
         padding: 10px 16px;
     }
-
-    .col-sm-6, .col-sm-12
-    {
-        padding: 2px;
-    }
 </style>
 {% end %}
 
-
-
 {% block body %}
-    <div id="wrap" class="wrap-success">
+    <div class="wrap-success">
         <!-- registration -->
         <div class="container-fluid productlist">
             <div class="row pages-caption" >
@@ -65,4 +58,5 @@
         </div>
     </div>
 
+    {% include '../content/footer.html' %}
 {% end %}
