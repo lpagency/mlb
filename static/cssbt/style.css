@@ -1883,7 +1883,7 @@ blockquote .small
 .profile-company .profile-foto-top
 {
     margin-top: -78px;
-    z-index: 400;
+    z-index: 9999;
 }
 
 .profile-company .profile-company-logo
@@ -1904,7 +1904,8 @@ blockquote .small
 .profile-partner .profile-partner-image img
 {
     height: 100%;
-    margin-left: -27%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .profile-company .profile-name h2
