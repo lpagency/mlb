@@ -63,34 +63,44 @@
                         <br>
                         <strong>
                             {% if is_admin %}
-                                <span class="editabletext" text-id="{{ site.name + '_name' }}" >{{ read_text(site.name + '_name') }}</span>
+                                <span class="editabletext" text-id="{{ site.name + '_name_cotiza_con_nosotros' }}" >
+                                    {{ read_text(site.name + '_name_cotiza_con_nosotros') }}
+                                </span>
                             {% else %}
-                                {{ read_text(site.name + '_name') }}
+                                {{ read_text(site.name + '_name_cotiza_con_nosotros') }}
                             {% end %}
                         </strong>
                         <br>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_address' }}">{{ read_text(site.name + '_address') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_address_cotiza_con_nosotros' }}">
+                                {{ read_text(site.name + '_address_cotiza_con_nosotros') }}
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_address') }}
+                            {{ read_text(site.name + '_address_cotiza_con_nosotros') }}
                         {% end %}
                         <br>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_city' }}">{{ read_text(site.name + '_city') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_city_cotiza_con_nosotros' }}">
+                                {{ read_text(site.name + '_city_cotiza_con_nosotros') }}
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_city') }}
+                            {{ read_text(site.name + '_city_cotiza_con_nosotros') }}
                         {% end %}
                         <br>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_phone' }}">{{ read_text(site.name + '_phone') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_phone_cotiza_con_nosotros' }}">
+                                {{ read_text(site.name + '_phone_cotiza_con_nosotros') }}
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_phone') }}
+                            {{ read_text(site.name + '_phone_cotiza_con_nosotros') }}
                         {% end %}
                         <br>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_email' }}">{{ read_text(site.name + '_email') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_email_cotiza_con_nosotros' }}">
+                                {{ read_text(site.name + '_email_cotiza_con_nosotros') }}
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_email') }}
+                            {{ read_text(site.name + '_email_cotiza_con_nosotros') }}
                         {% end %}
                         <br>
                     </address>
