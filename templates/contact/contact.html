@@ -114,18 +114,18 @@
                                         <input name="email" placeholder="Tu email" class="form-control input-lg requiredField" type="email" data-error-invalid="Invalid email address" data-error-empty="Ingrese email">
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label class="control-label">Mensaje</label>
+                                    <div class="controls">
+                                        <textarea name="message" placeholder="Escribe aquí tu mensaje" class="form-control input-lg requiredField" rows="5" data-error-empty="Ingrese mensaje"></textarea>
+                                    </div>
+                                </div>
+                                <p>
+                                    <button name="submit" type="submit" class="btn btn-store btn-block " data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Email Sent">Send Message</button>
+                                </p>
+                                <input type="hidden" name="submitted" id="submitted3" value="true">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label">Mensaje</label>
-                            <div class="controls">
-                                <textarea name="message" placeholder="Escribe aquí tu mensaje" class="form-control input-lg requiredField" rows="5" data-error-empty="Ingrese mensaje"></textarea>
-                            </div>
-                        </div>
-                        <p>
-                            <button name="submit" type="submit" class="btn btn-store btn-block " data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Email Sent">Send Message</button>
-                        </p>
-                        <input type="hidden" name="submitted" id="submitted3" value="true">
                     </form>
                 </div>
             </div>
