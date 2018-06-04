@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Guia de estilos:
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+    <!-- JavaScript -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- documentation css -->
+    <link rel="stylesheet" href="./docs-css/github.css">
+    <link rel="stylesheet" href="./docs-css/style.css">
+
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./css/colors.css">
+</head>
+
+<body>
+    <div class="container" >
+      <nav>
+        <ul>
+        <% @categories.each do |category, file_name| %>
+          <li><a href="<%= file_name %>"><%= category %></a></li>
+        <% end %>
+        </ul>
+      </nav>
+
+      <h1>Guía de estilos Magdalena Le Blanc</h1>
+      <section class="content">
+        <ul>
+        <% @blocks.each do |b| %>
+          <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+        <% end %>
+        </ul>

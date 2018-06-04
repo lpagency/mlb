@@ -1,0 +1,23 @@
+/*doc
+
+---
+title: Paleta de colores
+name: colors
+category: basics
+---
+
+esta es la paleta de colores:
+
+<div class="line txtC">
+<div class="col-md-12">
+        <div class="block col-md-1" style="background-color: #000" ></div>
+        <code class="col-md-11" >#000</code>
+    </div>
+    <div class="col-md-12">
+        <div class="block col-md-1" style="background-color: #fff" ></div>
+        <code class="col-md-11" >#fff</code>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+*/
