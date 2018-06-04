@@ -9,6 +9,20 @@
 	font-style: normal;
 }
 
+[class^="icons-"], [class*=" icons-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 .icons-arrow-left:before {
 	content: "\e609";
 }

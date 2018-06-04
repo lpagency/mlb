@@ -1,0 +1,295 @@
+/*doc
+
+---
+title: Header
+name: header
+category: header
+---
+
+header
+
+```html_example
+<div class="col-md-12 col-sm-12 header-container">
+    <div class="bg-black-magle">
+        <ul class="nav-list text-center effect menu-header container-fluid-magle">
+            <li>
+                <a href="/mlb/">Home</a>
+            </li>
+            <li>
+                <a href="/mlb/aboutus">Nosotros</a>
+            </li>
+            <li>
+                <a href="/mlb/contact">Contacto</a>
+            </li>
+        </ul>
+    </div>
+    <div class="line-bottom-magle ">
+        <div class="nav-header container-fluid-magle header-nav-upper">
+            <a href="/mlb">
+                <img id="mlb_logo_header" class="mlb-logo-header" src="https://cdn.loadingplay.com/static/images/73eb47906b2cba8c27fd21a27b9fcc8a_edaeabfba_edaeabfba_nombrepngpng.png" alt="item">
+            </a>
+        </div>
+    </div>
+
+    <div class="line-bottom-magle">
+        <ul class="nav-list text-center effect menu-products container-fluid-magle">
+            <li>
+                <a class="tag" href="/mlb?tag=cojines">Cojines</a>
+            </li>
+            <li>
+                <a class="tag" href="/mlb?tag=pieceras">Pieceras</a>
+            </li>
+            <li>
+                <a class="tag" href="/mlb?tag=accesorio">Accesorios</a>
+            </li>
+            <li>
+                <a class="tag" href="/mlb?tag=vestuario">Vestuario</a>
+            </li>
+            <li>
+                <a class="tag italic-font" href="">Blog!</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-me-princ">
+        <div id="main-nav">
+            <div class="container-fluid"></div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+header movil
+
+```html_example
+<div class="col-md-12 col-sm-12 header-container">
+    <div id="open-mlb-menu-movil">
+        <i class="icons-menu"></i>
+    </div>
+    <div class="mlb-menu-movil">
+        <ul>
+            <li>
+                <a href="/mlb/">Home</a>
+            </li>
+            <li>
+                <a href="/mlb/aboutus">Nosotros</a>
+            </li>
+            <li>
+                <a href="/mlb/contact">Contacto</a>
+            </li>
+            <li class="mlb-menu-movil-top">Categorías</li>
+            <li>
+                <a class="tag" href="/mlb?tag=cojines">Cojines</a>
+            </li>
+            <li>
+                <a class="tag" href="/mlb?tag=pieceras">Pieceras</a>
+            </li>
+            <li>
+                <a class="tag" href="/mlb?tag=accesorio">Accesorios</a>
+            </li>
+            <li>
+                <a class="tag" href="/mlb?tag=vestuario">Vestuario</a>
+            </li>
+            <li>
+                <a class="tag italic-font" href="">Blog!</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+
+*/
+
+.italic-font
+{
+    font-style: italic;
+}
+
+.header-nav-upper
+{
+    text-align: left;
+    display: block;
+}
+
+.header-container
+{
+    z-index: 11111;
+    padding: 0px 0px;
+    background-color: white;
+}
+
+.header-fixed
+{
+    position: fixed;
+}
+
+#open-mlb-menu-movil
+{
+    color: black;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 0;
+    font-size: 30px;
+    z-index: 2000;
+    background-color: white;
+}
+
+.header-movil-menu
+{
+    display: none;
+    position: fixed;
+}
+
+.mlb-menu-movil
+{
+    width: 280px;
+    height: 100%;
+    left: -280px;
+    background-color: black;
+    top: 0;
+    z-index: 2000;
+}
+
+.icons-menu
+{
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mlb-menu-movil ul
+{
+    width: 100%;
+    color: white;
+    font-size: 19px;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.mlb-menu-movil li
+{
+    padding: 5px 20px;
+    text-align: left;
+}
+
+.mlb-menu-movil li a
+{
+    color: rgb(172, 172, 172);
+}
+
+.mlb-menu-movil-top
+{
+    margin-top: 30px;
+}
+
+ul.menu-header
+{
+    padding: 4px;
+    background-color: black;
+    width: 100%;
+    text-align: right;
+}
+
+.menu-header li
+{
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: auto;
+    padding: 0px 10px;
+}
+
+.menu-header li a
+{
+    font-weight: 100;
+    font-size: 11px;
+    color: white;
+}
+
+.menu-header li a:hover
+{
+    background-color: none !important;
+    font-weight: 400 !important;
+}
+
+.line-bottom-magle
+{
+    border-bottom: 1px solid gray;
+}
+
+ul.container-fluid-magle
+{
+    padding: 10px 60px;
+    margin: 0px auto;
+    height: auto;
+}
+
+.mlb-logo-header
+{
+    max-height: 70px;
+    max-width: 250px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.menu-products
+{
+    padding: 3px 0px;
+}
+
+.menu-products li
+{
+    width: auto;
+    padding: 8px 10px;
+}
+
+.header-me-princ
+{
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+
+@media (max-width: 767px)
+{
+    .mlb-logo-header
+    {
+        padding-top: 2px;
+        margin-left: 35px;
+    }
+
+    .line-bottom-magle
+    {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1100;
+    }
+
+    .nav-header
+    {
+        padding: 10px 10px;
+        margin: 5px 0;
+    }
+
+    .menu-header-desktop
+    {
+        display: none;
+    }
+
+    #open-mlb-menu-movil
+    {
+        display: inline;
+    }
+}

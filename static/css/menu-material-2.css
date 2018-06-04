@@ -37,14 +37,6 @@
     background-size: 100%;
 }
 
-.header-container
-{
-    position: fixed;
-    z-index: 11111;
-    padding: 0px 0px;
-    background-color: white;
-}
-
 .col-no-padding
 {
     padding-left: 0px;
