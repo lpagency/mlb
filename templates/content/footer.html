@@ -2,64 +2,64 @@
 <footer class="bg-black-magle">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3 footer-top" style="text-align:left;">
+            <div class="col-sm-3 footer-top text-align-left">
                 <ul class="nav-list effect textos-footer ">
                     <li>
                         <p class="p-margin"><span class="home-footer">HOME</span></p>
                     </li>
                     <li>__________</li>
                 </ul>
-                <ul class="nav-list effect textos-footer " style="margin-top: 10px;">
-                    <li><a href="{{ site_base }}/">Home</a></li>
-                    <li><a href="{{ site_base }}/aboutus">Nosotros</a></li>
-                    <li><a href="{{ site_base }}/contact">Contacto</a></li>
-                    <li><a href="{{ site_base }}/terms_conditions">Términos y condiciones</a></li>
+                <ul class="nav-list effect textos-footer">
+                    <li><a class="footer-link" href="{{ site_base }}/">Home</a></li>
+                    <li><a class="footer-link" href="{{ site_base }}/aboutus">Nosotros</a></li>
+                    <li><a class="footer-link" href="{{ site_base }}/contact">Contacto</a></li>
+                    <li><a class="footer-link" href="{{ site_base }}/terms_conditions">Términos y condiciones</a></li>
                     {% if user is None %}
-                    <li><a href="{{ site_base }}/auth/login" style="cursor: pointer;">Ingresar</a></li>
+                    <li><a class="footer-link" href="{{ site_base }}/auth/login" style="cursor: pointer;">Ingresar</a></li>
                     {% else %}
-                    <li><a href="{{ site_base }}/auth/logout" style="cursor: pointer;">Salir</a></li>
+                    <li><a class="footer-link" href="{{ site_base }}/auth/logout" style="cursor: pointer;">Salir</a></li>
                     {% end %}
                 </ul>
             </div>
-            <div class="col-sm-3" style="text-align:left;">
+            <div class="col-sm-3 text-align-left">
                 <ul class="nav-list effect textos-footer ">
                     <li>
                         <p class="p-margin"><span class="home-footer">CATEGORÍAS</span></p>
                     </li>
                     <li>__________</li>
                 </ul>
-                <ul class="nav-list effect textos-footer " style="margin-top: 10px;">
-                    <li><a class="tag" href="{{ site_base }}?tag=urbano">Urbano</a></li>
-                    <li><a class="tag" href="{{ site_base }}?tag=andino">Andino</a></li>
-                    <li><a class="tag" href="{{ site_base }}?tag=fusion">Fusión</a></li>
-                    <li><a class="tag" href="{{ site_base }}?tag=cojines">Cojines</a></li>
-                    <li><a class="tag" href="{{ site_base }}?tag=pieceras">Pieceras</a></li>
-                    <li><a class="tag" href="{{ site_base }}?tag=accesorios">Accesorios</a></li>
-                    <li><a class="tag" href="{{ site_base }}?tag=vestuario">Vestuario</a></li>
-                    <li><a class="tag" href="">Blog!</a></li>
+                <ul class="nav-list effect textos-footer">
+                    <li><a class="tag footer-link" href="{{ site_base }}?tag=urbano">Urbano</a></li>
+                    <li><a class="tag footer-link" href="{{ site_base }}?tag=andino">Andino</a></li>
+                    <li><a class="tag footer-link" href="{{ site_base }}?tag=fusion">Fusión</a></li>
+                    <li><a class="tag footer-link" href="{{ site_base }}?tag=cojines">Cojines</a></li>
+                    <li><a class="tag footer-link" href="{{ site_base }}?tag=pieceras">Pieceras</a></li>
+                    <li><a class="tag footer-link" href="{{ site_base }}?tag=accesorios">Accesorios</a></li>
+                    <li><a class="tag footer-link" href="{{ site_base }}?tag=vestuario">Vestuario</a></li>
+                    <li><a class="tag footer-link" href="">Blog!</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3" style="text-align:left;">
+            <div class="col-sm-3 text-align-left">
                 <ul class="nav-list effect textos-footer ">
                     <li>
                         <p class="p-margin"><span class="home-footer">SOCIAL</span></p>
                     </li>
                     <li>__________</li>
                 </ul>
-                <ul class="nav-list effect textos-footer " style="margin-top: 10px;">
-                    <li><a href="{{ get_config(" facebook ") }}" target="_blank">facebook</a></li>
-                    <li><a href="{{ get_config(" pinterest ") }}" target="_blank">pinterest</a></li>
-                    <li><a href="{{ get_config(" instagram ") }}" target="_blank">instagram</a></li>
+                <ul class="nav-list effect textos-footer">
+                    <li><a class="footer-link" href="{{ get_config(" facebook ") }}" target="_blank">facebook</a></li>
+                    <li><a class="footer-link" href="{{ get_config(" pinterest ") }}" target="_blank">pinterest</a></li>
+                    <li><a class="footer-link" href="{{ get_config(" instagram ") }}" target="_blank">instagram</a></li>
                 </ul>
             </div>
             <div class="col-sm-3">
                 <ul class="nav-list effect textos-footer ">
-                    <li><a href="/"><img class="logo-mlb-footer" src="https://cdn.loadingplay.com/static/images/9f1b0c35a3362a55f7f935ad8f06aa10_abeeceeccaac_Logo_MLB.png"></a></li>
+                    <li><a class="footer-link" href="/"><img class="logo-mlb-footer" src="https://cdn.loadingplay.com/static/images/9f1b0c35a3362a55f7f935ad8f06aa10_abeeceeccaac_Logo_MLB.png"></a></li>
                     <li class="footer-direccion">Avenida la Dehesa 3265, local 8 (esquina Bernardo Larraín) Lo Barnechea.</li>
                 </ul>
             </div>
             <div class="col-sm-6 text_footer">
-                <p>Magdalena Le Blanc<b>  </b> © 2015-2018. Designed by <a href="https://www.loadingplay.com/" target="_blank">Loadingplay.com</a>.</p>
+                <p>Magdalena Le Blanc<b>  </b> © 2015-2018. Designed by <a class="footer-link" href="https://www.loadingplay.com/" target="_blank">Loadingplay.com</a>.</p>
             </div>
         </div>
     </div>

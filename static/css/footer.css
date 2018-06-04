@@ -256,6 +256,11 @@ a.footer-link
         text-align: center;
     }
 
+    ul.nav-list
+    {
+        margin-top: 30px;
+    }
+
     ul.nav-list li
     {
         text-align: center;

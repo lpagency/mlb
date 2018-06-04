@@ -60,13 +60,6 @@ a:hover
     transition: all 0.3s ease;
 }
 
-.container-fluid
-{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1200px;
-}
-
 .container-fluid-art
 {
     margin-right: auto;
@@ -792,12 +785,6 @@ th
     font-size: 16px;
 }
 
-footer
-{
-    background-color: #EBEBEB;
-    padding: 40px 0;
-}
-
 .copyright ul.nav-list
 {
     margin: 0 0 0 -5px;
@@ -812,27 +799,6 @@ footer
 .main-nav a
 {
     color: #000;
-}
-
-ul.nav-list
-{
-    list-style-type: none;
-    display: inline-block;
-    margin: 0px auto;
-    padding: 0 2em;
-    width: 100%;
-    font-weight: 300;
-    color: #FFF;
-    position: relative;
-}
-
-ul.nav-list li
-{
-    text-align: left;
-    display: inline-block;
-    margin: -2px;
-    list-style: none;
-    width: 16%;
 }
 
 ul.nav-list li.active a span
