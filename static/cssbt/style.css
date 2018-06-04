@@ -60,13 +60,6 @@ a:hover
     transition: all 0.3s ease;
 }
 
-.container-fluid
-{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1200px;
-}
-
 .container-fluid-art
 {
     margin-right: auto;
@@ -108,31 +101,6 @@ a:hover
 .big-text:hover
 {
     color: #45B099;
-}
-
-.btn
-{
-    font-size: 12px;
-    cursor: pointer;
-    padding: 0 35px;
-    line-height: 41px;
-    display: inline-block;
-    margin: 0 15px 15px 0;
-    height: 48px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 700;
-    outline: none;
-    position: relative;
-    background: rgb(255, 255, 255);
-    color: #505050;
-    border: 2px solid #505050;
-    border-radius: 0;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
 }
 
 .btn:hover,
@@ -817,12 +785,6 @@ th
     font-size: 16px;
 }
 
-footer
-{
-    background-color: #EBEBEB;
-    padding: 40px 0;
-}
-
 .copyright ul.nav-list
 {
     margin: 0 0 0 -5px;
@@ -837,27 +799,6 @@ footer
 .main-nav a
 {
     color: #000;
-}
-
-ul.nav-list
-{
-    list-style-type: none;
-    display: inline-block;
-    margin: 0px auto;
-    padding: 0 2em;
-    width: 100%;
-    font-weight: 300;
-    color: #FFF;
-    position: relative;
-}
-
-ul.nav-list li
-{
-    text-align: left;
-    display: inline-block;
-    margin: -2px;
-    list-style: none;
-    width: 16%;
 }
 
 ul.nav-list li.active a span

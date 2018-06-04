@@ -557,15 +557,6 @@
 .caja-s{height: 128px;}
 
 
-
-@media only screen and (max-width:1050px) {
-  
-    ul.nav-list 
-    {
-         margin-top: 30px;
-    }
-
-}
 @media only screen and (max-width:1024px) {
 
 
