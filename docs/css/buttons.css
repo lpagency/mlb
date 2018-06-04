@@ -1,0 +1,112 @@
+/*doc
+
+---
+title: Buttons
+name: buttons
+category: buttons
+---
+
+links:
+
+```html_example
+<ul class="nav-list effect">
+    <li><a class="tag" href="/mlb?tag=cojines">Cojines</a></li>
+</ul>
+```
+Conocer button:
+
+```html_example
+<button type="button" class="btn add-to-cart" product-id="7">conocer</button>
+```
+Mirar button
+
+```html_example
+<button type="button" class="btn btn-outline">MIRAR</button>
+```
+
+*/
+
+.btn
+{
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0 35px;
+    line-height: 41px;
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    height: 48px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    background: rgb(255, 255, 255);
+    color: #505050;
+    border-radius: 0;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    color: rgba(0, 0, 0, 0.39);
+    text-transform: uppercase;
+    border: 0px;
+    margin: 0;
+    background-color: rgba(119, 119, 119, 0.3);
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus
+{
+    color: black;
+    top: 0;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.btn-outline,
+.btn-outline-w
+{
+    background: transparent;
+    border: 2px solid #FFF;
+    box-shadow: none;
+    color: #FFF;
+    text-decoration: none;
+}
+
+ul.nav-list li a
+{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.effect a
+{
+    position: relative;
+    color: #000;
+    font-weight: 400;
+    line-height: 20px;
+    display: inline-block;
+    padding: 0 5px;
+    background: transparent;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+ul.nav-list li a:hover
+{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgba(200, 196, 196, 1);
+}
