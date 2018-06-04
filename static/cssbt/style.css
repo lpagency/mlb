@@ -110,31 +110,6 @@ a:hover
     color: #45B099;
 }
 
-.btn
-{
-    font-size: 12px;
-    cursor: pointer;
-    padding: 0 35px;
-    line-height: 41px;
-    display: inline-block;
-    margin: 0 15px 15px 0;
-    height: 48px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 700;
-    outline: none;
-    position: relative;
-    background: rgb(255, 255, 255);
-    color: #505050;
-    border: 2px solid #505050;
-    border-radius: 0;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
 .btn:hover,
 .btn:active,
 .btn:focus

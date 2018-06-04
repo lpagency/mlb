@@ -250,18 +250,6 @@
     margin-bottom: 22px;
 }
 
-.info-product button,
-.info-article button,
-.info-product-detail button,
-.mlb-btn button
-{
-    background-color: rgba(255, 255, 255, 0.81);
-    color: rgba(0, 0, 0, 0.39);
-    text-transform: uppercase;
-    border: 0px;
-    margin: 0;
-}
-
 .info-article button
 {
     background-color: transparent;

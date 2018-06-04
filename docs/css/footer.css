@@ -1,0 +1,268 @@
+/*doc
+
+---
+title: Footer
+name: Footer
+category: footer
+---
+
+Este es el estilo de footer:
+
+```html_example
+
+<footer class="bg-black-magle">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 footer-top">
+                <ul class="nav-list effect textos-footer">
+                    <li>
+                        <p class="p-margin">
+                            <span class="home-footer">HOME</span>
+                        </p>
+                    </li>
+                    <li>__________</li>
+                </ul>
+                <ul class="nav-list effect textos-footer ">
+                    <li>
+                        <a class="footer-link" href="/mlb/">Home</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="/mlb/aboutus">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="/mlb/contact">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="/mlb/terms_conditions">Términos y condiciones</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="/mlb/auth/logout" style="cursor: pointer;">Salir</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 text-align-left">
+                <ul class="nav-list effect textos-footer ">
+                    <li>
+                        <p class="p-margin">
+                            <span class="home-footer">CATEGORÍAS</span>
+                        </p>
+                    </li>
+                    <li>__________</li>
+                </ul>
+                <ul class="nav-list effect textos-footer ">
+                    <li>
+                        <a class="tag footer-link" href="/mlb?tag=urbano">Urbano</a>
+                    </li>
+                    <li>
+                        <a class="tag footer-link" href="/mlb?tag=andino">Andino</a>
+                    </li>
+                    <li>
+                        <a class="tag footer-link" href="/mlb?tag=fusion">Fusión</a>
+                    </li>
+                    <li>
+                        <a class="tag footer-link" href="/mlb?tag=cojines">Cojines</a>
+                    </li>
+                    <li>
+                        <a class="tag footer-link" href="/mlb?tag=pieceras">Pieceras</a>
+                    </li>
+                    <li>
+                        <a class="tag footer-link" href="/mlb?tag=accesorios">Accesorios</a>
+                    </li>
+                    <li>
+                        <a class="tag footer-link" href="/mlb?tag=vestuario">Vestuario</a>
+                    </li>
+                    <li>
+                        <a class="tag footer-link" href="">Blog!</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 text-align-left">
+                <ul class="nav-list effect textos-footer ">
+                    <li>
+                        <p class="p-margin">
+                            <span class="home-footer">SOCIAL</span>
+                        </p>
+                    </li>
+                    <li>__________</li>
+                </ul>
+                <ul class="nav-list effect textos-footer ">
+                    <li>
+                        <a class="footer-link" href="" target="_blank">facebook</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="" target="_blank">pinterest</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="" target="_blank">instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul class="nav-list effect textos-footer ">
+                    <li>
+                        <a class="footer-link" href="/">
+                            <img class="logo-mlb-footer" src="https://cdn.loadingplay.com/static/images/9f1b0c35a3362a55f7f935ad8f06aa10_abeeceeccaac_Logo_MLB.png">
+                        </a>
+                    </li>
+                    <li class="footer-direccion">
+                        Avenida la Dehesa 3265, local 8 (esquina Bernardo Larraín) Lo Barnechea.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 text_footer">
+                <p>Magdalena Le Blanc<b>
+                </b> © 2015-2018. Designed by <a class="footer-link" href="https://www.loadingplay.com/" target="_blank">Loadingplay.com</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="clearfix"></div>
+
+````
+
+*/
+
+.footer-top
+{
+    text-align: left;
+}
+
+.textos-footer
+{
+    margin-top: 10px;
+}
+
+.text-align-left
+{
+    text-align: left;
+}
+
+footer.bg-black-magle
+{
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.container-fluid
+{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+}
+
+.row
+{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+ul.nav-list
+{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px auto;
+    padding: 0 2em;
+    width: 100%;
+    font-weight: 300;
+    color: #FFF;
+    position: relative;
+}
+
+ul.nav-list li
+{
+    text-align: left;
+    display: inline-block;
+    margin: -2px;
+    list-style: none;
+}
+
+footer li
+{
+    width: 100%;
+    float: left;
+}
+
+.p-margin
+{
+    margin: 0px 0px 3px;
+}
+
+.home-footer
+{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.textos-footer li a
+{
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.logo-mlb-footer
+{
+    max-height: 50px;
+    max-width: 100%;
+}
+
+.footer-direccion
+{
+    position: relative;
+    top: 30px;
+}
+
+.text_footer
+{
+    margin-top: 30px;
+    text-align: right;
+}
+
+a.footer-link
+{
+    color: white;
+}
+
+@media (max-width: 991px)
+{
+    .text_footer p
+    {
+        font-size: 10px;
+    }
+
+    .home-footer
+    {
+        font-size: 14px;
+    }
+
+    .footer-direccion
+    {
+        font-size: 10px;
+    }
+
+    ul.nav-list li a
+    {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .p-margin
+    {
+        text-align: center;
+    }
+
+    ul.nav-list li
+    {
+        text-align: center;
+    }
+
+    .text_footer
+    {
+        text-align: center;
+    }
+}
