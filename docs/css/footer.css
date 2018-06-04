@@ -245,7 +245,7 @@ a.footer-link
 
     ul.nav-list li a
     {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
@@ -254,6 +254,11 @@ a.footer-link
     .p-margin
     {
         text-align: center;
+    }
+
+    ul.nav-list
+    {
+        margin-top: 30px;
     }
 
     ul.nav-list li
