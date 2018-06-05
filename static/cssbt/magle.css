@@ -48,40 +48,6 @@
     font-weight: 700;
 }
 
-.mlb-aboutus-header
-{
-    overflow: hidden;
-    height: 160px;
-}
-
-.mlb-aboutus-header .bkg
-{
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.28);
-    z-index: 150;
-    position: absolute !important;
-    top: 0;
-    width: 100%;
-}
-
-.mlb-aboutus-header h2
-{
-    z-index: 200;
-    color: white;
-    position: relative;
-    font-weight: 700;
-}
-
-.mlb-aboutus-header img,
-.mlb-aboutus-footer img
-{
-    position: absolute;
-    top: -50%;
-    z-index: 100;
-    left: 0;
-    height: auto;
-}
-
 .mlb-cart-add-products
 {
     background-color: white;
