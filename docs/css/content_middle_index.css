@@ -1,0 +1,32 @@
+/*doc
+
+---
+title: Content Middle Index
+name: content.middle.index
+category: content.middle.index
+---
+
+Content Middle Index
+
+```html_example
+<div class="col-sm-12 especial">
+    <div>
+        <img id="mlb_banner_5a" class="img-responsive lazy piezeras display-img" src="https://static.loadingplay.com/static/images/500_a8b4827e238b8940a9f463c5723dda3f_nombre.png" data-original="https://static.loadingplay.com/static/images/500_a8b4827e238b8940a9f463c5723dda3f_nombre.png">
+    </div>
+    <div class="info-product banner-secundario color-white">
+        <h2>
+            <span class="editabletext" text-id="mlb_banner5_tit">click para editar</span>
+        </h2>
+        <i>_______________________________</i>
+        <p>
+            <span class="editabletext" text-id="mlb_banner5_desc">click para editar</span>
+        </p>
+        <a href="/mlb?tag=pieceras">
+            <button type="button" class="btn">conocer</button>
+        </a>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+
+*/
