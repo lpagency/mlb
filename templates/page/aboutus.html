@@ -35,9 +35,9 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid text-center container-fluid-magle" style="display: inherit;">
+    <div class="container-fluid text-center container-fluid-magle display-about-us">
         <div class="row">
-            <div class="col-sm-8 mlb-text" style="float: none; margin: 30px auto;">
+            <div class="col-sm-8 mlb-text about-us-text">
                 <p> 
                     {% if is_admin %}
                         <p class="editabletext" text-id="{{ site.name + '_aboutus_tit' }}" >{{ read_text(site.name + '_aboutus_tit') }}</p>
@@ -48,9 +48,9 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid text-right container-fluid-magle" style="display: inherit; margin: 60px auto; overflow: hidden;">
+    <div class="container-fluid text-right container-fluid-magle about-us-text-parragraph-container">
         <div class="row">
-            <div class="col-sm-6 mlb-text especial" style="padding-right: 40px !important; margin-bottom: 40px;">
+            <div class="col-sm-6 mlb-text especial about-us-text-parragraph-row">
                 <div class="col-sm-12 especial" data-sr="enter left">
                     <h2>
                         {% if is_admin %}
@@ -93,14 +93,14 @@
                                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_aboutus2" name="image" id="img_banner_aboutus2" >
                             </div>
                         {% end %}
-                        <img id="mlb_banner_aboutus2" class="img-responsive show-hide" src="{{ read_image(site.name + '_banner_aboutus2') }}" />-->
+                        <img id="mlb_banner_aboutus2" class="img-responsive show-hide" src="{{ read_image(site.name + '_banner_aboutus2') }}" />
                     </div>
                 </div>
             </div>
             <div class="productlist">
                 <div class="row">
                     <div class="col-sm-12 especial mlb-aboutus-footer">
-                        <div class="col-sm-6 mlb-text" style="float: none; margin: 30px auto; color: white;" data-sr="enter bottom, over 2s">
+                        <div class="col-sm-6 mlb-text about-us-text-white" data-sr="enter bottom, over 2s">
                             <h2>
                                 {% if is_admin %}
                                     <span class="editabletext" text-id="{{ site.name + '_aboutus_tit4' }}" >{{ read_text(site.name + '_aboutus_tit4') }}</span>
@@ -132,14 +132,14 @@
                                 <input type="file" class="editableimage" image-id="{{ site.name }}_banner_aboutus3_a" name="image" id="img_banner_aboutus3_a" >
                             </div>
                         {% end %}
-                        <img id="mlb_banner_aboutus3" class="img-responsive show-hide" src="{{ read_image(site.name + '_banner_aboutus3') }}"  style="left:0px"/>
-                        <img id="mlb_banner_aboutus3_a" class="img-responsive hide-show" src="{{ read_image(site.name + '_banner_aboutus3_a') }}"  style="left:0px" />
+                        <img id="mlb_banner_aboutus3" class="img-responsive show-hide left-none" src="{{ read_image(site.name + '_banner_aboutus3') }}"/>
+                        <img id="mlb_banner_aboutus3_a" class="img-responsive hide-show left-none" src="{{ read_image(site.name + '_banner_aboutus3_a') }}"/>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid text-center container-fluid-magle" style="display: inherit; height: auto; padding: 80px 0px !important;">
+            <div class="container-fluid text-center container-fluid-magle container-about-us">
                 <div class="row">
-                    <div class="col-sm-8 mlb-text" style="float: none; margin: 30px auto;">
+                    <div class="col-sm-8 mlb-text about-us-text">
                         <h2>
                             {% if is_admin %}
                                 <span class="editabletext" text-id="{{ site.name + '_aboutus_tit5' }}" >{{ read_text(site.name + '_aboutus_tit5') }}</span>

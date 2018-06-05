@@ -285,29 +285,6 @@ a:hover
     color: #000;
 }
 
-.productlist,
-.product
-{
-    padding-top: 0;
-}
-
-.productlist .row
-{
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.productlist .col-sm-12,
-.productlist .col-sm-8,
-.productlist .col-sm-6,
-.productlist .col-sm-4,
-.productlist .col-sm-2
-{
-    position: relative;
-    min-height: 1px;
-    padding: 2px;
-}
-
 .productlist .col-sm-4.special
 {
     padding: 0;
@@ -1747,34 +1724,6 @@ blockquote .small
 {
     color: gray;
     font-weight: 300;
-}
-
-.profile-company .profile-foto-top
-{
-    margin-top: -78px;
-    z-index: 9999;
-}
-
-.profile-company .profile-company-logo
-{
-    border-radius: 100px;
-    overflow: hidden;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    margin: 0 auto;
-    border: 4px solid white;
-    -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.46);
-    -moz-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.46);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.46);
-}
-
-.profile-company .profile-company-logo img,
-.profile-partner .profile-partner-image img
-{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .profile-company .profile-name h2
