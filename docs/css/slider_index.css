@@ -88,6 +88,37 @@ Slider Index
 </div>
 <div class="clearfix"></div>
 ```
+Este JavaScript inicializa el banner
+
+```html_example
+<script>
+    setTimeout(function()
+    {
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: 3000,
+            onSlideChangeStart: function(swiper)
+            {
+                if (swiper.activeIndex == 4)
+                {
+                    swiper.activeIndex = 1;
+                }
+            },
+            onSlideChangeEnd: function(swiper)
+            {
+                swiper.onResize();
+            }
+        });
+    }, 3000);
+</script>
+```
+
 */
 
 .swiper-container
@@ -145,6 +176,7 @@ Slider Index
     right: 0;
     color: black;
     height: 300px;
+    margin: auto;
 }
 
 .banner-principal,

@@ -146,75 +146,6 @@
     color: black;
 }
 
-.info-product,
-.info-article
-{
-    display: block;
-    position: absolute;
-    z-index: 1;
-    overflow: hidden;
-    width: 300px;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: black;
-    height: 300px;
-}
-
-.info-article
-{
-    width: 180px;
-    background-color: rgba(255, 255, 255, 0.59);
-    padding: 10px;
-    height: 330px;
-    border: 2px solid black;
-    -webkit-box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.59);
-    -moz-box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.59);
-    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.59);
-    margin: auto;
-    text-align: center;
-}
-
-.info-product h2,
-.info-article h2,
-.info-product-detail h2
-{
-    font-size: 29px;
-    font-weight: 800;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-}
-
-.info-article h2
-{
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.info-product i
-{
-    font-weight: 800;
-}
-
-.info-product p,
-.info-article p
-{
-    font-size: 14px;
-    text-transform: uppercase;
-    margin: 20px 0px;
-}
-
-.info-article p
-{
-    font-size: 12px;
-    text-transform: none;
-    padding: 0px 10px;
-    line-height: 1.8;
-    color: rgb(83, 83, 83);
-}
-
 .info-product h1
 {
     font-size: 33px !important;
@@ -225,11 +156,6 @@
 {
     background-color: transparent;
     color: black;
-}
-
-.color-white
-{
-    color: white !important;
 }
 
 .banner-principal-product

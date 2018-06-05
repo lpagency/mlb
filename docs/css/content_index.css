@@ -1,0 +1,114 @@
+/*doc
+
+---
+title: Content Index
+name: content.index
+category: content.index
+---
+
+Content Index
+
+```html_example
+<div class="row cat-index">
+    <div class="col-sm-4 especial content-height">
+        <img id="mlb_banner_2" src="https://static.loadingplay.com/static/images/200_6ce51c1da938a040cb40d9a43213233f_nombre.png" data-original="https://static.loadingplay.com/static/images/200_6ce51c1da938a040cb40d9a43213233f_nombre.png" class="img-responsive lazy display-img" alt="item">
+        <div class="info-product">
+            <h2 class="text-align">
+                <span class="editabletext" text-id="mlb_banner2_tit">click para editar</span>
+            </h2>
+            <i>_______________________________</i>
+            <p>
+                <span class="editabletext" text-id="mlb_banner2_desc">click para editar</span>
+            </p>
+            <a href="/mlb?tag=fusion">
+                <button type="button" class="btn">conocer</button>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4 especial content-height">
+        <img id="mlb_banner_3" src="https://static.loadingplay.com/static/images/200_0f46f0851a5f05f9f5e3dab8dbe8aecc_nombre.png" data-original="https://static.loadingplay.com/static/images/200_0f46f0851a5f05f9f5e3dab8dbe8aecc_nombre.png" class="img-responsive lazy display-img" alt="item">
+        <div class="info-article">
+            <h2 class="text-align">
+                <span class="editabletext" text-id="mlb_banner3_tit">click para editar</span>
+            </h2>
+            <p>
+                <span class="editabletext" text-id="mlb_banner3_desc">click para editar</span>
+            </p>
+            <a href="/mlb?tag=urbano">
+                <button type="button" class="btn">conocer</button>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4 especial content-height">
+        <img id="mlb_banner_4" src="https://static.loadingplay.com/static/images/200_c3f786c28e1e2000f3f96df5ca285539_nombre.png" data-original="https://static.loadingplay.com/static/images/200_c3f786c28e1e2000f3f96df5ca285539_nombre.png" class="img-responsive lazy display-img" alt="item">
+        <div class="info-product color-white">
+            <h2 class="text-align">
+                <span class="editabletext" text-id="mlb_banner4_tit">click para editar</span>
+            </h2>
+            <i>_______________________________</i>
+            <p>
+                <span class="editabletext" text-id="mlb_banner4_desc">click para editar</span>
+            </p>
+            <a href="/mlb?tag=andino">
+                <button type="button" class="btn">conocer</button>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+
+*/
+
+.content-height
+{
+    height: 515px;
+}
+
+.display-img
+{
+    height: 100%;
+}
+
+.cat-index
+{
+    text-align: center;
+}
+
+.info-product i
+{
+    font-weight: 800;
+}
+
+.info-article p
+{
+    font-size: 12px;
+    text-transform: none;
+    padding: 0px 10px;
+    line-height: 1.8;
+    color: rgb(83, 83, 83);
+}
+
+#home
+{
+    text-align: center;
+}
+
+.info-article
+{
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0.59);
+    padding: 10px;
+    height: 330px;
+    border: 2px solid black;
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.59);
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.59);
+    margin: auto;
+    text-align: center;
+}
+
+.color-white
+{
+    color: white;
+}
