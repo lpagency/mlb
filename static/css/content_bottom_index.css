@@ -1,0 +1,63 @@
+/*doc
+
+---
+title: Content Bottom Index
+name: content.bottom.index
+category: content.bottom.index
+---
+
+Content Bottom Index
+
+```html_example
+<div class="row cat-index-end cat-index">
+    <div class="col-sm-6 especial banner-50">
+        <div>
+            <img id="mlb_banner_6" class="img-responsive show-hide mlb-img lazy" src="https://static.loadingplay.com/static/images/500_b3a2bc16849d353ad428aad7175a7fe6_nombre.png" data-original="https://static.loadingplay.com/static/images/500_b3a2bc16849d353ad428aad7175a7fe6_nombre.png">
+            <img id="mlb_banner_6a" class="img-responsive hide-show mlb-img lazy img-display" src="https://static.loadingplay.com/static/images/500_1038aabb2de4713f23e2b825f8c39ba6_nombre.png" data-original="https://static.loadingplay.com/static/images/500_1038aabb2de4713f23e2b825f8c39ba6_nombre.png">
+        </div>
+        <div class="info-product">
+            <h2>
+                <span class="editabletext" text-id="mlb_banner6_tit">click para editar</span>
+            </h2>
+            <i>_______________________________</i>
+            <p>
+                <span class="editabletext" text-id="mlb_banner6_desc">click para editar</span>
+            </p>
+            <a href="/mlb?tag=cojines">
+                <button type="button" class="btn">conocer</button>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6 especial banner-50">
+        <div>
+            <img id="mlb_banner_7" class="img-responsive show-hide mlb-img lazy" src="https://static.loadingplay.com/static/images/500_63b80d891dc43a3a2bb5e8f160d52d5f_nombre.png" data-original="https://static.loadingplay.com/static/images/500_63b80d891dc43a3a2bb5e8f160d52d5f_nombre.png">
+            <img id="mlb_banner_7a" class="img-responsive hide-show mlb-img lazy img-display" src="https://static.loadingplay.com/static/images/500_a93487e09fe7a43c658629fde4a8e14e_nombre.png" data-original="https://static.loadingplay.com/static/images/500_a93487e09fe7a43c658629fde4a8e14e_nombre.png">
+        </div>
+        <div class="info-article">
+            <h2>
+                <span class="editabletext" text-id="mlb_banner7_tit">click para editar</span>
+            </h2>
+            <p>
+                <span class="editabletext" text-id="mlb_banner7_desc">click para editar</span>
+            </p>
+            <a href="/mlb/aboutus">
+                <button type="button" class="btn">conocer</button>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+
+*/
+
+.img-display
+{
+    display: inline;
+    opacity: 1;
+}
+
+.banner-50 img
+{
+    width: 100%;
+}
