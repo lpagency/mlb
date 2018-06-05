@@ -29,15 +29,13 @@
 
 <div type="template" id="product_template" class="hidden">
     <div class="col-sm-4 mlb-product especial">
-        <div class="col-sm-12 sobre-botones caja-m" style="padding: 10px !important; z-index: 1;" onclick="">
+        <div class="col-sm-12 sobre-botones caja-m prod-box" onclick="">
             <div class="cont-boxes">
                 <div class="box-product" onclick="">
                     <div class="vertical-center-cont">
                         <div class="horizontal-center-cont">
                             <div class="box-product-info" onclick="">
-                                <!--<button type="button" class="add-to-cart btn btn-outline" product-id="{{! id }}" product-name="{{! name }}" product-upp="{{! upp }}" product-price="{{! main_price|money }}">DETALLE</button> -->
                                 <a class="mas-info" href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
-                                  <!--   <button type="button" class="Prod-btn " data-toggle="button" aria-pressed="false" autocomplete="off">Agregar al carro</button> -->
                                     <button type="button" class="btn btn-outline">MIRAR</button>
                                 </a>
 
@@ -48,7 +46,7 @@
                 <img src="{{! images[0]['thumb_1'] }}" onload="this.onload='';this.src='{{! images[0]['thumb_200'] }}'" class="img-responsive lazy" alt="item">
             </div>
         </div>
-        <a class="mas-info-detalle" href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}" style="z-index: 2;">
+        <a class="mas-info-detalle z-index-product" href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
         <h1>{{! name }}</h1>
         </a>
         <h2 class="add-to-cart">{{! main_price|money }}</h2>

@@ -333,19 +333,6 @@ width: 50%;
    color:    rgb(119, 119, 119);
 }
 
-/*object-fit: cover; centra imagenes vertical u horizontal */
-.img-responsive
-{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/*.slider{
-    display: none;
-}*/
-
 .mlb-img{
     width: auto;
     height: auto;

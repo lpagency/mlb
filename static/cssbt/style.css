@@ -119,16 +119,6 @@ a:hover
     background-color: rgba(119, 119, 119, 0.3) !important;
 }
 
-.btn-outline,
-.btn-outline-w
-{
-    background: transparent !important;
-    border: 2px solid #FFF !important;
-    box-shadow: none;
-    color: #FFF;
-    text-decoration: none;
-}
-
 .btn-outline-w
 {
     border-color: #FFF;
@@ -1355,10 +1345,6 @@ blockquote .small
 {
     height: 50% !important;
 }
-.especial
-{
-    padding: 0;
-}
 
 .menu-1
 {
@@ -1703,12 +1689,6 @@ blockquote .small
 {
     font-size: 18px !important;
     font-weight: 100;
-}
-
-.img-responsive
-{
-    display: block;
-    width: 100%;
 }
 
 .h1-art
