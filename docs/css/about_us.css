@@ -1,0 +1,180 @@
+/*doc
+
+---
+title: About Us
+name: about.us
+category: about.us
+---
+
+About Us
+
+```html_example
+<div id="wrap" class="productlist">
+    <div class="row">
+        <div class="container-fluid text-center container-fluid-magle display-about-us">
+            <div class="row">
+                <div class="col-sm-8 mlb-text about-us-text">
+                    <p></p>
+                    <p class="editabletext" text-id="mlb_aboutus_tit">
+                        <br>
+                        <br>
+                        <b>Magdalena Le Blanc</b> es una marca que busca la integración de la artesanía de la gente nativa de Chile con el diseño textil contemporáneo.
+                        Los proyectos vienen con un fuerte sentido social, con el objetivo de 
+                        <b>proveer de empleo a tejedoras y hiladoras del sur de Chile</b>, recobrando así el arte textil ancestral a través del diseño y manufactura de alta calidad.
+                        Tenemos un alto compromiso con el medio ambiente y los artesanos, creamos piezas únicas que entregan identidad a los espacios.
+                        <br>
+                        <br> 
+                        Porque creemos en la generación orgánica de empleo y porque conservar nuestra cultura vale la pena, todos nuestros proveedores son pequeños agricultores del norte y sur de nuestro país.
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-right container-fluid-magle about-us-text-parragraph-container">
+            <div class="row">
+                <div class="col-sm-6 mlb-text especial about-us-text-parragraph-row">
+                    <div class="col-sm-12 especia">
+                        <h2>
+                            <span class="editabletext" text-id="mlb_aboutus_tit2">Los Materiales</span>
+                        </h2>
+                        <p>___________</p>
+                        <p></p>
+                        <p class="editabletext" text-id="mlb_aboutus_desc2">
+                            <b>Lana de Alpaca:</b>
+                            este animal proviene de la familia de los camelidos, quienes fueron domesticados por el imperio Inca.
+                            Su lana es conocida principalmente por su suavidad y eficiencia para el frío y la humedad.
+                            Nosotros trabajamos este material con pequeños agricultores del norte de Chile.
+                        </p>
+                        <p></p>
+                    </div>
+                    <div class="col-sm-12 especial">
+                        <h2>
+                            <span class="editabletext" text-id="mlb_aboutus_tit3">click para editar</span>
+                        </h2>
+                        <p>___________</p>
+                        <p></p>
+                        <p class="editabletext" text-id="mlb_aboutus_desc3">
+                            <b>Lana de Oveja:</b>
+                            históricamente la lana de oveja fue una de las primeras fibras que el hombre transformo en lana y luego la utilizo para fabricarse abrigo.
+                            Es un elemento versátil y cálido, perdurable en el tiempo, razones por las cuales las mujeres Mapuches fabrican la mayor cantidad de sus ropas con este material.
+                            Nosotros trabajamos este material con pequeños agricultores del sur de Chile, que tienen su propio rebaño de ovejas.
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 mlb-text especial">
+                    <img id="mlb_banner_aboutus2" class="img-responsive show-hide" src="https://static.loadingplay.com/static/images/1760291e5edc3fc83ec036b15e58054d_mlb-aboutus-detail.png.png">--&gt;
+                </div>
+            </div>
+        </div>
+        <div class="productlist">
+            <div class="row">
+                <div class="col-sm-12 especial mlb-aboutus-footer">
+                    <div class="col-sm-6 mlb-text about-us-text-white" data-sr="enter bottom, over 2s">
+                        <h2>
+                            <span class="editabletext" text-id="mlb_aboutus_tit4">Hecho en Chile</span>
+                        </h2>
+                    <p>___________</p>
+                    <p></p>
+                    <p class="editabletext" text-id="mlb_aboutus_desc4">Por productores Chilenos</p>
+                    <p></p>
+                </div>
+            <div class="col-sm-12 especial bkg"></div>
+                <img id="mlb_banner_aboutus3" class="img-responsive show-hide left-none" src="https://static.loadingplay.com/static/images/5bd5b73d0aeef9d26a6c6bf11e8790fb_Sin-titulo-1.png.png">
+                <img id="mlb_banner_aboutus3_a" class="img-responsive hide-show left-none" src="https://static.loadingplay.com/static/images/6f71a16f0c1f9911e55434515d75dde3_mlb-aboutus-footera.png.png">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center container-fluid-magle container-about-us">
+        <div class="row">
+            <div class="col-sm-8 mlb-text text-about-us">
+                <h2>
+                    <span class="editabletext" text-id="mlb_aboutus_tit5">click para editar</span>
+                </h2>
+                <p>___________</p>
+                <p></p>
+                <p class="editabletext" text-id="mlb_aboutus_desc5">click para editar</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+
+*/
+
+.display-about-us
+{
+    display: inherit;
+}
+
+.about-us-text
+{
+    float: none;
+    margin: 30px auto;
+}
+
+.about-us-text-parragraph-container
+{
+    display: inherit;
+    margin: 60px auto;
+    overflow: hidden;
+}
+
+.about-us-text-parragraph-row
+{
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+
+.about-us-text-white
+{
+    float: none;
+    margin: 30px auto;
+    color: white;
+    text-align: center;
+}
+
+.left-none
+{
+    left: 0px;
+}
+
+.container-about-us
+{
+    display: inherit;
+    height: auto;
+    padding: 80px 0px;
+}
+
+.text-about-us
+{
+    float: none;
+    margin: 30px auto;
+}
+
+.mlb-text p
+{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 27px;
+}
+
+.mlb-text
+{
+    z-index: 200;
+}
+
+.mlb-text h2
+{
+    font-weight: 700;
+}
+
+.mlb-aboutus-footer
+{
+    height: auto;
+    padding: 140px 0px;
+    overflow: hidden;
+}
