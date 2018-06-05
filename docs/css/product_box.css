@@ -1,0 +1,170 @@
+/*doc
+
+---
+title: Product Box
+name: product.box
+category: product.box
+---
+
+Producto:
+
+```html_example
+<div class="col-sm-4 mlb-product especial">
+    <div class="col-sm-12 sobre-botones caja-m prod-box" onclick="">
+        <div class="cont-boxes">
+            <div class="box-product" onclick="">
+                <div class="vertical-center-cont">
+                    <div class="horizontal-center-cont">
+                        <div class="box-product-info" onclick="">
+                            <a class="mas-info" href="/mlb/sc/product/detail/bufanda_urbano_alpaca_achibueno/2943">
+                                <button type="button" class="btn btn-outline">MIRAR</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="https://84static.loadingplay.com/static/images/200_49cd68d93a0e2e035feb15f8626b6064_IMG_0163.jpg.png" onload="this.onload='';this.src='https://84static.loadingplay.com/static/images/200_49cd68d93a0e2e035feb15f8626b6064_IMG_0163.jpg.png'" class="img-responsive lazy" alt="item">
+        </div>
+    </div>
+    <a class="mas-info-detalle z-index-product" href="/mlb/sc/product/detail/bufanda_urbano_alpaca_achibueno/2943">
+        <h1>Bufanda Urbano Alpaca Achibueno</h1>
+    </a>
+    <h2 class="add-to-cart">$42.500</h2>
+</div>
+<div class="clearfix"></div>
+```
+
+*/
+
+.prod-box
+{
+    padding: 10px;
+    z-index: 1;
+}
+
+.z-index-product
+{
+    z-index: 2;
+}
+
+.caja-xl,
+.caja-m,
+.caja-s
+{
+    overflow: hidden;
+}
+
+.mlb-product
+{
+    height: 460px;
+}
+
+.especial
+{
+    padding: 0;
+}
+
+.caja-m
+{
+    height: 354.5px;
+}
+
+.cont-boxes
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sobre-botones .box-profile,
+.sobre-botones .box-product
+{
+    opacity: 0;
+}
+
+.sobre-botones:hover .box-profile,
+.sobre-botones:hover .box-product
+{
+    opacity: 3;
+    background: rgba(128, 128, 128, 0.38);
+}
+
+.sobre-botones:hover .box-product .box-product-info
+{
+    display: block;
+}
+
+.box-art,
+.box-event,
+.box-banner,
+.box-product,
+.box-profile,
+.box-gallery
+{
+    z-index: 5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px 60px;
+    font-weight: 100;
+    background: rgba(1, 1, 1, 0.3);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    display: table;
+}
+
+.vertical-center-cont
+{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    padding: 0px;
+    width: 100%;
+}
+
+.horizontal-center-cont
+{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.box-product-info
+{
+    display: none;
+}
+
+.img-responsive
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1
+{
+    letter-spacing: 2px;
+}
+
+.mlb-product h2
+{
+    width: 100%;
+    margin-top: 0px;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+}
+
+.mlb-product h1
+{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 13px;
+    float: left;
+    width: 100%;
+    font-weight: 700;
+    padding: 5px;
+}
