@@ -51,8 +51,8 @@
                         <input type="file" class="editableimage" image-id="{{ site.name }}_banner_1a" name="image" id="img_banner_1a">
                     </div>
                 {% end %}
-                <img id="mlb_banner_1" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_1', 1) }}" data-original="{{ read_image(site.name + '_banner_1') }}" />
-                <img id="mlb_banner_1a" class="img-responsive hide-show lazy" src="{{ read_image(site.name + '_banner_1a', 1) }}" data-original="{{ read_image(site.name + '_banner_1a') }}" />
+                <img id="mlb_banner_1" class="show-hide lazy" src="{{ read_image(site.name + '_banner_1', 1) }}" data-original="{{ read_image(site.name + '_banner_1') }}" />
+                <img id="mlb_banner_1a" class="hide-show lazy" src="{{ read_image(site.name + '_banner_1a', 1) }}" data-original="{{ read_image(site.name + '_banner_1a') }}" />
                 <div class="info-product banner-principal">
                     <h2>
                         {% if is_admin %}

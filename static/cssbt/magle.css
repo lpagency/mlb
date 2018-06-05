@@ -227,24 +227,9 @@
     color: black;
 }
 
-.banner-principal,
-.banner-secundario
-{
-    text-align: left;
-    display: inline-block;
-    margin: auto auto auto 8%;
-}
-
 .color-white
 {
     color: white !important;
-}
-
-.banner-secundario
-{
-    text-align: right;
-    margin: auto 8% auto auto;
-    width: 400px;
 }
 
 .banner-principal-product

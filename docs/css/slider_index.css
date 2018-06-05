@@ -1,0 +1,187 @@
+/*doc
+
+---
+title: Slider Index
+name: slider.index
+category: slider.index
+---
+
+Slider Index
+
+```html_example
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img id="mlb_banner_10" class="img-responsive show-hide lazy" src="https://static.loadingplay.com/static/images/e04ceec9eb5ba50875857a47727ccebc_nombre.png" data-original="https://static.loadingplay.com/static/images/e04ceec9eb5ba50875857a47727ccebc_nombre.png">
+            <img id="mlb_banner_10a" class="img-responsive hide-show lazy" src="https://static.loadingplay.com/static/images/ddeafd641ae5161322e147d878e01cc4_nombre.png" data-original="https://static.loadingplay.com/static/images/ddeafd641ae5161322e147d878e01cc4_nombre.png">
+            <div class="info-product banner-secundario">
+                <h2>
+                    <span class="editabletext" text-id="mlb_banner10_tit">click para editar</span>
+                </h2>
+                <p>
+                    <span class="editabletext" text-id="mlb_banner10_desc">click para editar</span>
+                </p>
+                <button type="button" class="btn add-to-cart" product-id="7">conocer</button>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img id="mlb_banner_1" class="img-responsive show-hide lazy" src="https://static.loadingplay.com/static/images/5e3f52f3e304c8aebe7adff4b44f4c58_nombre.png" data-original="https://static.loadingplay.com/static/images/5e3f52f3e304c8aebe7adff4b44f4c58_nombre.png" style="display: none;">
+            <img id="mlb_banner_1a" class="img-responsive hide-show lazy" src="https://static.loadingplay.com/static/images/0f77a0407ae2c5051ed1817a967cca07_nombre.png" data-original="https://static.loadingplay.com/static/images/0f77a0407ae2c5051ed1817a967cca07_nombre.png" style="display: inline;">
+            <div class="info-product banner-principal">
+                <h2>
+                    <span class="editabletext" text-id="mlb_banner1_tit">click para editar</span>
+                </h2>
+                <p>
+                    <span class="editabletext" text-id="mlb_banner1_desc">click para editar</span>
+                </p>
+                <a href="/mlb?tag=cojines">
+                    <button type="button" class="btn btn-banner">conocer</button>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img id="mlb_banner_9" class="img-responsive show-hide lazy" src="https://static.loadingplay.com/static/images/0ed7f6e00a49cfdf457ae7253a4fe627_nombre.png" data-original="https://static.loadingplay.com/static/images/0ed7f6e00a49cfdf457ae7253a4fe627_nombre.png" style="display: none;">
+            <img id="mlb_banner_9a" class="img-responsive hide-show lazy" src="https://static.loadingplay.com/static/images/dddac3faa67ca715a5708df3f9d4f35d_nombre.png" data-original="https://static.loadingplay.com/static/images/dddac3faa67ca715a5708df3f9d4f35d_nombre.png" style="display: inline;">
+            <div class="info-product banner-principal banner-principal-product">
+                <h2>
+                    <span class="editabletext" text-id="mlb_banner9_tit">click para editar</span>
+                </h2>
+                <p>
+                    <span class="editabletext" text-id="mlb_banner9_desc">click para editar</span>
+                </p>
+                <a href="/mlb?tag=pieceras">
+                    <button type="button" class="btn">conocer</button>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img id="mlb_banner_10" class="img-responsive show-hide lazy" src="https://static.loadingplay.com/static/images/e04ceec9eb5ba50875857a47727ccebc_nombre.png" data-original="https://static.loadingplay.com/static/images/e04ceec9eb5ba50875857a47727ccebc_nombre.png" style="display: none;">
+            <img id="mlb_banner_10a" class="img-responsive hide-show lazy" src="https://static.loadingplay.com/static/images/ddeafd641ae5161322e147d878e01cc4_nombre.png" data-original="https://static.loadingplay.com/static/images/ddeafd641ae5161322e147d878e01cc4_nombre.png" style="display: inline;">
+            <div class="info-product banner-secundario">
+                <h2>
+                    <span class="editabletext" text-id="mlb_banner10_tit">click para editar</span>
+                </h2>
+                <p>
+                    <span class="editabletext" text-id="mlb_banner10_desc">click para editar</span>
+                </p>
+                <button type="button" class="btn add-to-cart" product-id="7">conocer</button>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img id="mlb_banner_1" class="img-responsive show-hide lazy" src="https://static.loadingplay.com/static/images/5e3f52f3e304c8aebe7adff4b44f4c58_nombre.png" data-original="https://static.loadingplay.com/static/images/5e3f52f3e304c8aebe7adff4b44f4c58_nombre.png" style="display: none;">
+            <img id="mlb_banner_1a" class="img-responsive hide-show lazy" src="https://static.loadingplay.com/static/images/0f77a0407ae2c5051ed1817a967cca07_nombre.png" data-original="https://static.loadingplay.com/static/images/0f77a0407ae2c5051ed1817a967cca07_nombre.png" style="display: inline;">
+            <div class="info-product banner-principal">
+                <h2>
+                    <span class="editabletext" text-id="mlb_banner1_tit">click para editar</span>
+                </h2>
+            <p>
+                <span class="editabletext" text-id="mlb_banner1_desc">click para editar</span>
+            </p>
+            <a href="/mlb?tag=cojines">
+                <button type="button" class="btn btn-banner">conocer</button>
+            </a>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<div class="clearfix"></div>
+```
+*/
+
+.swiper-container
+{
+    width: 100%;
+    height: 540px;
+}
+
+.swiper-slide
+{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.show-hide
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hide-show
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-product,
+.info-article
+{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    height: 300px;
+}
+
+.banner-principal,
+.banner-secundario
+{
+    text-align: left;
+    display: inline-block;
+    margin: auto auto auto 8%;
+}
+
+.banner-secundario
+{
+    text-align: right;
+    margin: auto 8% auto auto;
+    width: 400px;
+}
+
+.info-product h2,
+.info-article h2,
+.info-product-detail h2
+{
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.banner-principal h2,
+.banner-secundario h2
+{
+    margin-bottom: 5px;
+}
+
+.info-product p,
+.info-article p
+{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
