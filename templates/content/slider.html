@@ -367,11 +367,11 @@
     </div>
     <div class="row">
         <ul class="col-sm-12 nav-list text-center effect menu-3 container-fluid-magle">
-            <li style="width: 100% !important; text-align: center; color: black; text-transform: uppercase;">
-                <p>___________</p>
+            <li class="line-text">
+                <p class="text-center">___________</p>
             </li>
-            <li style="width: 100% !important; text-align: center; color: black;font-variant:small-caps;">
-                <h1>
+            <li class="text-container">
+                <h1 class="text-center">
                     {% if is_admin %}
                         <span class="editabletext" text-id="{{ site.name + '_product_tit' }}" >{{ read_text(site.name + '_product_tit') }}</span>
                     {% else %}
@@ -379,8 +379,8 @@
                     {% end %}
                 </h1>
             </li>
-            <li style="width: 100% !important; text-align: center; color: black;font-variant:small-caps;">
-                <h1>
+            <li class="text-container">
+                <h1 class="text-center">
                     {% if is_admin %}
                         <span class="editabletext" text-id="{{ site.name + '_product_desc' }}" >{{ read_text(site.name + '_product_desc') }}</span>
                     {% else %}
