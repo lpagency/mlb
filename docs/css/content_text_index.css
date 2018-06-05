@@ -1,0 +1,56 @@
+/*doc
+
+---
+title: Content Text Index
+name: content.text.index
+category: content.text.index
+---
+
+Content Text Index
+
+```html_example
+<ul class="col-sm-12 nav-list text-center effect menu-3 container-fluid-magle cat-index">
+    <li class="line-text">
+        <p class="text-center">___________</p>
+    </li>
+    <li class="text-container">
+        <h1 class="text-center">
+            <span class="editabletext" text-id="mlb_product_tit">click para editar</span>
+        </h1>
+    </li>
+    <li class="text-container">
+        <h1 class="text-center">
+            <span class="editabletext" text-id="mlb_product_desc">click para editar</span>
+        </h1>
+    </li>
+</ul>
+<div class="clearfix"></div>
+```
+
+*/
+
+.line-text
+{
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.text-container
+{
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-variant:small-caps;
+}
+
+h1 span
+{
+    font-weight: 700;
+}
