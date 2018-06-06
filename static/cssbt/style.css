@@ -365,12 +365,6 @@ a:hover .product-price
     margin-top: 30px;
 }
 
-.product .product-title
-{
-    margin-top: 0;
-    margin-bottom: 21px;
-}
-
 .product .product-price
 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -383,11 +377,6 @@ a:hover .product-price
 {
     color: #ddd;
     margin-left: 5px;
-}
-
-.product .product-detail
-{
-    margin: 30px 0;
 }
 
 .product .product-detail ul
@@ -403,32 +392,6 @@ a:hover .product-price
 .product-mark
 {
     padding-top: 30px;
-}
-
-.product-detail.description
-{
-    font-family: "Open Sans", helvetica, arial, sans-serif;
-    font-style: italic;
-    margin: 0px 0px;
-}
-
-.myform
-{
-    padding-top: 5px;
-    padding-bottom: 15px;
-}
-
-.myform h2
-{
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 15px;
-    font-weight: 400;
-}
-
-.info-product-detail h2
-{
-    border-bottom: 0px solid #ddd;
 }
 
 .myform .form-group label
@@ -1775,46 +1738,16 @@ blockquote .small
     height: 220px !important;
 }
 
-.container-fluid-product
-{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mlb-content-img-prod
-{
-    height: 400px;
-    text-align: center;
-}
-
-.mlb-content-img-prod img
-{
-    height: 400px;
-    max-width: 730px;
-    margin: 0 auto;
-}
-
 .top-distance-content
 {
     padding-top: 165px;
     margin-bottom: 50px;
 }
 
-.container-fluid-product .row
-{
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
 .text-nom-prod,
 .text-nom-prod:hover
 {
     color: black;
-}
-
-.mlb-image-products
-{
-    max-height: 100%;
 }
 
 @media only screen and (max-width: 1600px)
@@ -1851,15 +1784,6 @@ blockquote .small
 
 @media (max-width: 767px)
 {
-    .productlist .col-sm-12,
-    .productlist .col-sm-8,
-    .productlist .col-sm-6,
-    .productlist .col-sm-4
-    {
-        position: relative;
-        min-height: 1px;
-    }
-
     .productlist .col-bt-6,
     .productlist .col-bt-5,
     .productlist .col-bt-4,
@@ -2006,19 +1930,6 @@ blockquote .small
     footer .pull-right
     {
         float: none!important;
-    }
-
-    .product-mobile .product-title,
-    .product-mobile .product-price
-    {
-        font-size: 24px;
-        margin-bottom: 0;
-    }
-
-    .product-mobile
-    {
-        margin-top: 15px;
-        margin-bottom: 15px;
     }
 
     .product-mobile .product-mark
