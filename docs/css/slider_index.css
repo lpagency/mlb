@@ -146,6 +146,11 @@ Este JavaScript inicializa el banner
     align-items: center;
 }
 
+.banner-principal-product
+{
+    height: 270px;
+}
+
 .show-hide
 {
     display: inline-block;
@@ -216,4 +221,43 @@ Este JavaScript inicializa el banner
     font-size: 14px;
     text-transform: uppercase;
     margin: 20px 0px;
+}
+
+@media only screen and (max-width:767px)
+{
+    .info-product,
+    .info-article
+    {
+        width: 200px;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .info-product h2,
+    .info-article h2
+    {
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .info-product h1
+    {
+        margin-bottom: 20px;
+    }
+
+    .info-product p,
+    .info-article p
+    {
+        margin: 10px 0px;
+    }
+
+    .info-product button,
+    .info-article button,
+    .mlb-btn button
+    {
+        margin: 0px 10% 10px 10%;
+        width: 80%;
+    }
 }

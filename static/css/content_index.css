@@ -80,6 +80,12 @@ Content Index
     font-weight: 800;
 }
 
+.info-product h1
+{
+    font-size: 33px;
+    margin-bottom: 22px;
+}
+
 .info-article p
 {
     font-size: 12px;
@@ -87,6 +93,12 @@ Content Index
     padding: 0px 10px;
     line-height: 1.8;
     color: rgb(83, 83, 83);
+}
+
+.info-article button
+{
+    background-color: transparent;
+    color: black;
 }
 
 #home

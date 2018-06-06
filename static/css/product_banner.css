@@ -126,10 +126,21 @@ Product Banner
     object-fit: cover;
 }
 
-@media (max-width: 480px)
+@media (max-width: 767px)
 {
     .hide-show.mlb-img
     {
         height: 100%;
+    }
+
+    .mlb-aboutus-header .hide-show
+    {
+        top: 50px;
+        width: 100%;
+    }
+
+    .mlb-aboutus-header h2
+    {
+        margin-top: 70px;
     }
 }
