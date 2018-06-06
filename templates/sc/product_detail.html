@@ -62,13 +62,13 @@
         });
     </script>
     <div type="template" id="product_detail" class="hidden">
-        <div class="container-fluid-product product" style="text-align:left;">
-            <div class="row visible-xs product-mobile" style="color: black;">
+        <div class="container-fluid-product product text-align-left">
+            <div class="row visible-xs product-mobile color-black">
                 <div class="col-xs-12 text-center tit-mobile info-product-detail">
                     <h2 class="product-title">{{! name }}</h2>
                     <br>
                     <div class="main-price">
-                        <span style="font-size:30px;">{{! main_price|money }}</span>
+                        <span class="font-size-price">{{! main_price|money }}</span>
                     </div>
                     <br>
                 </div>
@@ -76,7 +76,7 @@
             <div class="row slider-detail">
                 <div class="col-sm-8 ">
                     <div class="mlb-content-img-prod">
-                        <div class="swiper-container" style="height: 440px;">
+                        <div class="swiper-container product-container-height">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
@@ -90,7 +90,7 @@
                             </div>
                         </div>
                         <!-- Add Pagination -->
-                        <div class="swiper-pagination" style="position: relative;"></div>
+                        <div class="swiper-pagination position-relative-arrows"></div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -104,7 +104,7 @@
                                 <p>{{! description }}</p>
                             </div>
                             <div class="main-price hidden-xs">
-                                <span style="font-size:30px;">{{! main_price|money }}</span>
+                                <span class="font-size-price">{{! main_price|money }}</span>
                             </div>
                         </div>
                     </form>
@@ -121,14 +121,14 @@
                             <p>{{! bullet_1 }}</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 mlb-text especial" style="height:400px;">
+                    <div class="col-sm-6 mlb-text especial special-height">
                         <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
                     </div>
                 </div>
             </div>
             <div class="productlist">
                 <div class="row">
-                    <div class="col-sm-12 especial mlb-aboutus-footer" style="padding-bottom: 0px" ;>
+                    <div class="col-sm-12 especial mlb-aboutus-footer padding-product-made-in-chile">
                         <div class="col-sm-6 mlb-text made-in-chile">
                             <h2>HECHO EN CHILE</h2>
                             <p>___________</p>
@@ -136,7 +136,7 @@
                             </p>
                         </div>
                         <div class="col-sm-12 especial bkg"></div>
-                        <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item" style="left:0px;top:0%;">
+                        <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive img-no-position" alt="item">
                     </div>
                 </div>
             </div>

@@ -1,0 +1,279 @@
+/*doc
+
+---
+title: Product Detail
+name: product.detail
+category: product.detail
+---
+
+Product Detail
+
+```html_example
+<div id="wrap-2" class="top-distance-content container-fluid-product product-detail-container especial container-product-detail">
+    <div class="container-fluid-product product text-align-left">
+        <div class="row visible-xs product-mobile color-black">
+            <div class="col-xs-12 text-center tit-mobile info-product-detail">
+                <h2 class="product-title">Cojín Fusión Algodón-Alpaca Lauca</h2>
+                <br>
+                <div class="main-price">
+                    <span clas="font-size-price">$65.000</span>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="row slider-detail">
+            <div class="col-sm-8 ">
+                <div class="mlb-content-img-prod">
+                    <div class="swiper-container product-container-height">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://84static.loadingplay.com/static/images/500_93551351e7c812bc2ae1cd8dbc0593f9_MFGBCJPG__JPG.png" class="mlb-image-products image img-responsive" alt="item">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://84static.loadingplay.com/static/images/500_d1e7c9266375126ddae90157adeb827a_MFGBC_JPG_JPG.png" class="mlb-image-products image img-responsive" alt="item">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://static.loadingplay.com/static/images/1_eb1852c1e13bb1087f187b579784f778_maxresdefault.png" class="mlb-image-products image img-responsive" alt="item">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination position-relative-arrows"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <form action="product1.html" method="POST" class="myform">
+                    <div class="fondo-blanco-movil info-product-detail">
+                        <h2 class="product-title hidden-xs">Cojín Fusión Algodón-Alpaca Lauca</h2>
+                        <div class="product-detail description">
+                            <p>Cojín estilo fusión con Algondón y Alpaca<br>Mide 60x40 cms<br>Colores Beige con&nbsp;Crudo<br></p>
+                        </div>
+                        <div class="main-price hidden-xs">
+                            <span class="font-size-price">$65.000</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-no-padding">
+        <div class="container-fluid text-right container-fluid-magle text-you-know">
+            <div class="row">
+                <div class="col-sm-6 mlb-text especial you-know">
+                    <div class="col-sm-12 especial">
+                        <h2>SABÍAS QUE</h2>
+                        <p>___________</p>
+                        <p>El estilo Fusión integra un conjunto de materias primas naturales como la alpaca, el lino y algodón. Combinando la costura con el tejido a telar se logra un diseño actual y versátil, un resultado muy agradable a la vista y el tacto.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 mlb-text especial special-height">
+                    <img src="https://84static.loadingplay.com/static/images/500_93551351e7c812bc2ae1cd8dbc0593f9_MFGBCJPG__JPG.png" class="mlb-image-products image img-responsive" alt="item">
+                </div>
+            </div>
+        </div>
+        <div class="productlist">
+            <div class="row">
+                <div class="col-sm-12 especial mlb-aboutus-footer padding-product-made-in-chile">
+                    <div class="col-sm-6 mlb-text made-in-chile">
+                        <h2>HECHO EN CHILE</h2>
+                        <p>___________</p>
+                        <p> 60 x 40 cm</p>
+                    </div>
+                    <div class="col-sm-12 especial bkg"></div>
+                    <img src="https://84static.loadingplay.com/static/images/500_c1c147a695edbbbad4e09c3d07ea0916_MFGBC_JPG_JPG.png" class="mlb-image-products image img-responsive img-no-position" alt="item">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+
+Este JavaScript inicializa el banner
+
+```html_example
+<script>
+    setTimeout(function()
+    {
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: 3000,
+            onSlideChangeStart: function(swiper)
+            {
+                if (swiper.activeIndex == 4)
+                {
+                    swiper.activeIndex = 1;
+                }
+            },
+            onSlideChangeEnd: function(swiper)
+            {
+                swiper.onResize();
+            }
+        });
+    }, 3000);
+</script>
+```
+*/
+
+.color-black
+{
+    color: black;
+}
+
+.product-container-height
+{
+    height: 440px;
+}
+
+.font-size-price
+{
+    font-size: 30px;
+}
+
+.position-relative-arrows
+{
+    position: relative;
+}
+
+.special-height
+{
+    height: 400px;
+}
+
+.padding-product-made-in-chile
+{
+    padding-bottom: 0px;
+}
+
+.img-no-position
+{
+    left: 0px;
+    top: 0%;
+}
+
+.container-fluid-product
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product .product-title
+{
+    margin-top: 0;
+    margin-bottom: 21px;
+}
+
+.mlb-content-img-prod
+{
+    height: 400px;
+    text-align: center;
+}
+
+.mlb-content-img-prod img
+{
+    height: 400px;
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.myform
+{
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.product-detail.description
+{
+    font-style: italic;
+    margin: 0px 0px;
+}
+
+.col-no-padding
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.text-you-know
+{
+    display: inherit;
+    margin: 60px auto;
+}
+
+.you-know
+{
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+
+.mlb-image-products
+{
+    max-height: 100%;
+}
+
+.mlb-aboutus-footer
+{
+    height: auto;
+    padding: 140px 0px;
+    overflow: hidden;
+}
+
+.made-in-chile
+{
+    text-align: center;
+    float: none;
+    margin: 30px auto;
+    color: white;
+}
+
+.info-product-detail h2
+{
+    border-bottom: 0px solid #ddd;
+}
+
+@media (max-width: 767px)
+{
+    .product-mobile
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .product .tit-mobile
+    {
+        position: relative;
+        z-index: 2;
+    }
+
+    .product-mobile .product-title,
+    .product-mobile .product-price
+    {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .product-detail.description
+    {
+        margin-top: 60px;
+    }
+
+    .mlb-aboutus-footer
+    {
+        padding: 10px 0px;
+    }
+}
