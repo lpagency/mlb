@@ -31,6 +31,15 @@ Product Banner
 
 */
 
+.mlb-img
+{
+    width: auto;
+    height: auto;
+    opacity: 0;
+    font-size: 21px;
+    text-align: center;
+}
+
 .productlist,
 .product
 {
@@ -115,4 +124,12 @@ Product Banner
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 480px)
+{
+    .hide-show.mlb-img
+    {
+        height: 100%;
+    }
 }

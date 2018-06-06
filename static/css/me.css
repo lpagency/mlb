@@ -143,118 +143,6 @@ width: 50%;
   top: 0;
   height: 100%;
 }
-.g-pages-button:hover
-{
-
-}
-/* fotmularios */
-.form-group
-{
-    width: 100%;
-    float: left;
-    margin-top: 10px;
-}
-.form-group label
-{
-    width: 100%;
-    text-align: left;
-    color: rgb(170, 170, 170);
-    font-weight: 300;
-}
-.form-control
-{
-    -webkit-box-shadow: inset 0px 2px 5px -200px rgba(0,0,0,0.41) !important; 
-    -moz-box-shadow: inset 0px 2px 5px -200px rgba(0,0,0,0.41) !important; 
-    box-shadow: inset 0px 2px 5px -200px rgba(0,0,0,0.41) !important;
-    border: 0 !important;
-    border-bottom: 1px solid rgb(236, 236, 236) !important;
-    border-radius: 0px !important;
-    padding: 6px 0px !important;
-    font-size: 16px !important;
-    font-weight: 400 !important;
-    color: rgb(53, 47, 47) !important;
-}
-.form-control:focus
-{
-    -webkit-box-shadow: 0px 2px 5px -200px rgba(0,0,0,0.41) !important;
-    -moz-box-shadow: 0px 2px 5px -200px rgba(0,0,0,0.41) !important;
-    box-shadow: 0px 2px 5px -200px rgba(0,0,0,0.41) !important;
-    border-color: #66afe9 !important;
-    outline: 0 !important;
-    border-bottom: 2px solid #66afe9 !important;
-}
-.form-add-image
-{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: rgb(234, 81, 81);
-    float: left;
-    margin: 11px;
-    position: relative;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.41);   -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.41);   
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.41);
-    -webkit-transition: all .2s ease-in-out;
-      -moz-transition: all .2s ease-in-out;
-      -o-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out;
-}
-.form-add-image:hover
-{
-    background-color: rgb(201, 39, 39);
-}
-.form-added-image
-{
-    float: left;
-    height : 60px;
-    width : 60px;
-    background-color : gray;
-    color : white;
-    font-size : 18px;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    display: none;
-}
-.form-added-image-gallery
-{
-    float: left;
-    height : 60px;
-    width : 60px;
-    background-color : gray;
-    color : white;
-    font-size : 18px;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    margin-right: 10px;
-}
-.form-input-hided
-{
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-}
-.image-preview-container
-{
-   
-}
-.form-added-image i,
-.form-added-image-gallery i
-{
-   
-      position: absolute;
-      font-size: 20px;
-      float: right;
-      right: 6px;
-      z-index: 1;
-      top: 4px;
-}
-.image-preview-container img
-{
-   
-}
 
 .image-center-helper 
 {
@@ -331,15 +219,6 @@ width: 50%;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
    color:    rgb(119, 119, 119);
-}
-
-.mlb-img{
-    width: auto;
-    height: auto;
-    opacity: 0;
-    font-size: 21px;
-    text-align: center;
-    /*display: none;*/
 }
 
 @media only screen and (max-width: 414px){
