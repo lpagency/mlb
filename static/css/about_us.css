@@ -162,6 +162,11 @@ About Us
     line-height: 27px;
 }
 
+.mlb-text p span
+{
+    font-weight: 700;
+}
+
 .mlb-text
 {
     z-index: 200;
