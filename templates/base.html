@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/cssbt/style.css">
         <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/cssbt/icomoon/style.css">
         <!-- específico para magdalena leblanc -->
-        <link rel="stylesheet" type="text/css" href="{{ site_base }}/{{ nocache_static }}/css/content.css">
+        <link rel="stylesheet" type="text/css" href="{{ site_base }}/{{ nocache_static }}/css/me.css">
 
         <!-- NEW CSS -->
         <link rel="stylesheet" type="text/css" href="{{ site_base }}/{{ nocache_static }}/css/fonts.css">
@@ -50,6 +50,7 @@
         <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/menu/css/wallop-slider.css">
         <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/menu/css/colpick.css">
         <!-- menu editor css -->
+        <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/css/menu-material-2.css">
         <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/css/ligthbox-d.css">
         <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/css/gallery.css">
         <!-- Link Swiper's CSS -->
@@ -74,6 +75,100 @@
 
     <body id="home">
         <!-- generar contenido y formularios -->
+        <div id="menu_movil" class="descripcion_wrapper descripcion_opacity b_wrapper" style="display:none;">
+            <div class="descripcion_cerrar">
+                <button id="tellmeboton2" class="tellmebutton-2"><i class="icon-remove"></i></button>
+            </div>
+            <div class="descripcion_contenido">
+                {% include 'content/add_form.html' %}
+            </div>
+        </div>
+        <div id="cuerpo" style="width: 100%">
+            <div class="menu">
+                <nav class="nav-main">
+                    <div class="nav-container">
+                        <ul>
+                            <li class="menu-ti">EDITOR ESTILO</li>
+                            <li class="menu-st">Header</li>
+                            <li class="menu-te">
+                                <a href="#">menu</a>
+                                <ul>
+                                    <li class="menu-ti"><a href="#" class="back"><strong>Tipos de menu</strong></a></li>
+                                    <li class="menu-te"><a href="#">Menu 1</a></li>
+                                    <li class="menu-te"><a href="#">menu 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-te">
+                                <a href="#">Logo</a>
+                                <ul>
+                                    <li class="menu-ti"> <a href="#" class="back"><strong>Logo</strong></a></li>
+                                    <button class="btn-menu">Subir imagen</button>
+                                </ul>
+                            </li>
+                            <li class="menu-st">Contenedor</li>
+                            <li class="menu-te">
+                                <a href="#">color fondo</a>
+                                <ul>
+                                    <li class="menu-ti"> <a href="#" class="back"><strong>color fondo</strong></a></li>
+                                    <li>
+                                        <div id="picker"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-te">
+                                <a href="#">productos</a>
+                                <ul>
+                                    <li class="menu-ti"> <a href="#" class="back"><strong>Productos</strong></a></li>
+                                    <li class="menu-te">
+                                        <div class="close-btn">X</div>
+                                        <div class="row-products">fila</div>
+                                        <!-- slider -->
+                                        <div class="photo-slider wallop-slider wallop-slider--slide slide-css">
+                                            <div class="slide-css-2">
+                                                <ul class="wallop-slider__list list-css">
+                                                    <li class="wallop-slider__item wallop-slider__item--current"><img src="{{ site_base }}/{{ nocache_static }}/menu/images/row1.png"></li>
+                                                    <li class="wallop-slider__item"><img src="{{ site_base }}/{{ nocache_static }}/menu/images/row2.png"></li>
+                                                    <li class="wallop-slider__item"><img src="{{ site_base }}/{{ nocache_static }}/menu/images/row3.png"></li>
+                                                    <li class="wallop-slider__item"><img src="{{ site_base }}/{{ nocache_static }}/menu/images/row4.png"></li>
+                                                    <li class="wallop-slider__item"><img src="{{ site_base }}/{{ nocache_static }}/menu/images/row5.png"></li>
+                                                    <li class="wallop-slider__item"><img src="{{ site_base }}/{{ nocache_static }}/menu/images/row6.png"></li>
+                                                    <li class="wallop-slider__item"><img src="{{ site_base }}/{{ nocache_static }}/menu/images/row7.png"></li>
+                                                    <li class="wallop-slider__item"><img src="{{ site_base }}/{{ nocache_static }}/menu/images/row8.png"></li>
+                                                    <li class="wallop-slider__item"><img src="{{ site_base }}/{{ nocache_static }}/menu/images/row9.png"></li>
+                                                </ul>
+                                            </div>
+                                            <button class="wallop-slider__btn wallop-slider__btn--previous btn btn--previous wallop-btn-base base-btn" disabled>
+                                            </button>
+                                            <button class="wallop-slider__btn wallop-slider__btn--next btn btn--next wallop-btn-base base-btn-2">></button>
+                                        </div>
+                                        <!-- slider -->
+                                    </li>
+                                    <button class="btn-menu btn-menu-top">+ agregar row</button>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul style="top:0px;">
+                            <li class="menu-st">Diseños anteriores</li>
+                            <li class="menu-te">
+                                <a href="#">todos los diseños</a>
+                                <ul>
+                                    <li class=""> <a href="#" class="back"><strong>DISEÑOS ANTERIORES</strong></a></li>
+                                    <li><a href="#">Diseño 1</a></li>
+                                    <li><a href="#">Diseño 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="campo_guardar save-field">
+                        <input class="campo_guandar_input" type="text" placeholder="NOMBRE DISEÑO">
+                        <button class="btn-menu">Guardar</button>
+                    </div>
+                    <div class="campo_guardar save-field-block">
+                        <button class="btn-menu">actualizar</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
         {% block header %}
         {% end %}
 
