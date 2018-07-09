@@ -3,16 +3,47 @@
         <i class="icons-menu"></i>
     </div>
     <div class="mlb-menu-movil header-fixed">
-        <ul>
+        <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ site_base }}/">Home</a></li>
             <li><a href="{{ site_base }}/aboutus">Nosotros</a></li>
             <li><a href="{{ site_base }}/contact">Contacto</a></li>
             <li class="mlb-menu-movil-top">Categorías</li>
-            <li><a class="tag" href="{{ site_base }}?tag=cojines">Cojines</a></li>
-            <li><a class="tag" href="{{ site_base }}?tag=pieceras">Pieceras</a></li>
-            <li><a class="tag" href="{{ site_base }}?tag=accesorio">Accesorios</a></li>
-            <li><a class="tag" href="{{ site_base }}?tag=vestuario">Vestuario</a></li>
-            <li><a class="tag italic-font" href="">Blog!</a></li>
+            <div class="w3-dropdown-hover tag">
+                <button class="w3-btn w3-red allow-default tag" data-toggle="dropdown" tag="colecciones">COJINES <b class="caret"></b></button>
+                <div class="w3-dropdown-content w3-border">
+                    <li><a href="{{ site_base }}?tag=60x40">60x40</a></li>
+                    <li><a href="{{ site_base }}?tag=60x60">60x60</a></li>
+                    <li><a href="{{ site_base }}?tag=60x50">60x50</a></li>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover tag">
+                <button class="w3-btn w3-red allow-default tag" data-toggle="dropdown" tag="colecciones">PIECERAS<b class="caret"></b></button>
+                <div class="w3-dropdown-content w3-border">
+                    <li><a href="{{ site_base }}?tag=twin">Twin</a></li>
+                    <li><a href="{{ site_base }}?tag=queen">Queen</a></li>
+                    <li><a href="{{ site_base }}?tag=king">King</a></li>
+                    <li><a href="{{ site_base }}?tag=superking">SuperKing</a></li>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover tag">
+                <button class="w3-btn w3-red allow-default tag" data-toggle="dropdown" tag="colecciones">ACCESORIOS <b class="caret"></b></button>
+                <div class="w3-dropdown-content w3-border">
+                    <li><a href="{{ site_base }}?tag=revisteros">Revisteros</a></li>
+                    <li><a href="{{ site_base }}?tag=cuelgas">Cuelgas</a></li>
+                    <li><a href="{{ site_base }}?tag=carpeta">Carpeta Juego</a></li>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover tag">
+                <button class="w3-btn w3-red allow-default tag" data-toggle="dropdown" tag="colecciones">VESTUARIO <b class="caret"></b></button>
+                <div class="w3-dropdown-content w3-border">
+                    <li><a href="{{ site_base }}?tag=ponchos">Ponchos</a></li>
+                    <li><a href="{{ site_base }}?tag=bufandon">Bufandon</a></li>
+                    <li><a href="{{ site_base }}?tag=bufandas">Bufandas</a></li>
+                    <li><a href="{{ site_base }}?tag=chal_vestir">Chal de Vestir</a></li>
+                    <li><a href="{{ site_base }}?tag=chal_guaguas">Chal de Guaguas</a></li>
+                </div>
+            </div>
+            <li><a class="tag italic-font" href="{{ site_base }}?tag=ofertas">OFERTAS</a></li>
         </ul>
     </div>
     <!-- menú laterla movil -->
@@ -43,11 +74,42 @@
     <!-- menu secundario -->
     <div class="line-bottom-magle menu-header-desktop">
         <ul class="nav-list text-center effect menu-products container-fluid-magle">
-            <li><a class="tag" href="{{ site_base }}?tag=cojines">Cojines</a></li>
-            <li><a class="tag" href="{{ site_base }}?tag=pieceras">Pieceras</a></li>
-            <li><a class="tag" href="{{ site_base }}?tag=accesorio">Accesorios</a></li>
-            <li><a class="tag" href="{{ site_base }}?tag=vestuario">Vestuario</a></li>
-            <li><a class="tag italic-font" href="">Blog!</a></li>
+            <div class="w3-dropdown-hover tag">
+                <button class="w3-btn w3-red allow-default tag" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}?tag=cojines'">COJINES <b class="caret"></b></button>
+                <div class="w3-dropdown-content w3-border">
+                    <li><a href="{{ site_base }}?tag=60x40">60x40</a></li>
+                    <li><a href="{{ site_base }}?tag=60x60">60x60</a></li>
+                    <li><a href="{{ site_base }}?tag=60x50">60x50</a></li>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover tag">
+                <button class="w3-btn w3-red allow-default tag" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}?tag=pieceras'">PIECERAS<b class="caret"></b></button>
+                <div class="w3-dropdown-content w3-border">
+                    <li><a href="{{ site_base }}?tag=twin">Twin</a></li>
+                    <li><a href="{{ site_base }}?tag=queen">Queen</a></li>
+                    <li><a href="{{ site_base }}?tag=king">King</a></li>
+                    <li><a href="{{ site_base }}?tag=superking">SuperKing</a></li>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover tag">
+                <button class="w3-btn w3-red allow-default tag" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}?tag=accesorio'">ACCESORIOS <b class="caret"></b></button>
+                <div class="w3-dropdown-content w3-border">
+                    <li><a href="{{ site_base }}?tag=revisteros">Revisteros</a></li>
+                    <li><a href="{{ site_base }}?tag=cuelgas">Cuelgas</a></li>
+                    <li><a href="{{ site_base }}?tag=carpeta">Carpeta Juego</a></li>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover tag">
+                <button class="w3-btn w3-red allow-default tag" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}?tag=vestuario'">VESTUARIO <b class="caret"></b></button>
+                <div class="w3-dropdown-content w3-border">
+                    <li><a href="{{ site_base }}?tag=ponchos">Ponchos</a></li>
+                    <li><a href="{{ site_base }}?tag=bufandon">Bufandon</a></li>
+                    <li><a href="{{ site_base }}?tag=bufandas">Bufandas</a></li>
+                    <li><a href="{{ site_base }}?tag=chal_vestir">Chal de Vestir</a></li>
+                    <li><a href="{{ site_base }}?tag=chal_guaguas">Chal de Guaguas</a></li>
+                </div>
+            </div>
+            <li><a class="tag italic-font" href="{{ site_base }}?tag=ofertas">OFERTAS</a></li>
         </ul>
     </div>
     <div class="header-me-princ">
