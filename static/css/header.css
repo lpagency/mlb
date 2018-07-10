@@ -788,6 +788,7 @@ ul.w3-ul li:last-child
     background-color: black;
     top: 0;
     z-index: 2000;
+    overflow: overlay;
 }
 
 .icons-menu
@@ -897,6 +898,9 @@ ul.container-fluid-magle
     z-index: 2;
     position: relative;
 }
+
+/*   RESPONSIVE  */
+
 @media (max-width: 1199px)
 {
 
@@ -938,84 +942,8 @@ ul.container-fluid-magle
         color: rgba(128, 128, 128, 0.62);
         font-size: 12px;
     }
-}
-
-@media (max-width: 768px)
-{
-
-    .w3-dropdown-menu
-    {
-        cursor: auto;
-        color: #FFF;
-        background-color: #000;
-        display: none;
-        position: absolute;
-        min-width: 189px;
-        margin: 0;
-        padding: 0;
-        top: 47px;
-    }
-
-    .w3-dropdown-menu a
-    {
-        padding: 6px 16px;
-        display: block;
-        font-weight: 300;
-        color: rgba(128, 128, 128, 0.62);
-        font-size: 12px;
-    }
-
-
-    .dropdown-menu
-    {
-        position: absolute;
-        box-shadow: none;
-        background-color: #dad6d6 !important;
-        border-color: #dad6d6;
-        border: 1px solid #dad6d6;
-        border-radius: 0px;
-        margin: 0 0 0 0;
-        width: 137%;
-        left: 0px !important;
-        min-width: 205px;
-    }
-
-    .navbar-nav.navbar-right:last-child
-    {
-        width: 100%;
-        top: -50px;
-        height: 0px;
-        left: 118px;
-        position: relative;
-    }
-
-    .nav>li>a
-    {
-        font-size: 10px;
-        padding: 15px 10px;
-        font-weight: bold;
-    }
-
-    .w3-btn,
-    .w3-btn-block
-    {
-        word-wrap: break-word;
-        padding: 18px 5px;
-    }
-    .w3-dropdown-hover:hover .w3-dropdown-content
-    {
-        display: contents;
-        z-index: 1;
-    }
-    .mlb-menu-movil div 
-    {
-        padding: 5px 20px;
-        text-align: left;
-    }
-
-}
-
-@media (max-width: 767px)
+} 
+@media (max-width: 1025px)
 {
     .w3-btn, .w3-btn-block 
     {
@@ -1104,14 +1032,13 @@ ul.container-fluid-magle
 
     .navbar-nav.navbar-right:last-child
     {
-        margin-right: inherit;
-        margin-top: 30px;
-        width: inherit;
-        top: inherit;
-        height: inherit;
+        width: 100%;
+        top: 0px;
+        height: 0px;
         left: inherit;
-        position: inherit;
+        position: relative;
     }
+
 
     b.caret
     {
@@ -1120,7 +1047,7 @@ ul.container-fluid-magle
 
     .w3-btn, .w3-btn-block
     {
-        width: 100%;
+        width: 95%;
         text-align: left;
         padding-left: 20px;
     }
@@ -1155,5 +1082,101 @@ ul.container-fluid-magle
     #open-mlb-menu-movil
     {
         display: inline;
+    }
+
+    .mlb-menu-movil div 
+    {
+        padding: 5px 20px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .mlb-menu-movil li 
+    {
+        padding: 5px 20px;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px)
+{
+
+    .w3-dropdown-menu
+    {
+        cursor: auto;
+        color: #FFF;
+        background-color: #000;
+        display: none;
+        position: absolute;
+        min-width: 189px;
+        margin: 0;
+        padding: 0;
+        top: 47px;
+    }
+
+    .w3-dropdown-menu a
+    {
+        padding: 6px 16px;
+        display: block;
+        font-weight: 300;
+        color: rgba(128, 128, 128, 0.62);
+        font-size: 12px;
+    }
+
+    .dropdown-menu
+    {
+        position: absolute;
+        box-shadow: none;
+        background-color: #dad6d6 !important;
+        border-color: #dad6d6;
+        border: 1px solid #dad6d6;
+        border-radius: 0px;
+        margin: 0 0 0 0;
+        width: 137%;
+        left: 0px !important;
+        min-width: 205px;
+    }
+
+    .navbar-nav.navbar-right:last-child
+    {
+        width: 100%;
+        top: 0px;
+        height: 0px;
+        left: inherit;
+        position: relative;
+    }
+
+    .nav>li>a
+    {
+        font-size: 10px;
+        padding: 15px 10px;
+        font-weight: bold;
+    }
+
+    .w3-btn,
+    .w3-btn-block
+    {
+        word-wrap: break-word;
+        padding: 18px 5px;
+    }
+    .w3-dropdown-hover:hover .w3-dropdown-content
+    {
+        display: contents;
+        z-index: 1;
+    }
+    .mlb-menu-movil div 
+    {
+        padding: 5px 20px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .mlb-menu-movil li 
+    {
+        padding: 5px 20px;
+        text-align: left;
+        width: 100%;
+        font-size: 12px;
     }
 }

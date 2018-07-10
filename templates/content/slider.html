@@ -283,49 +283,45 @@
         <div class="col-sm-12 especial">
             {% if is_admin %}
                 <div class="image-upload">
-                    <label for="img_banner_piezeras">
+                    <label for="img_banner_ancho">
                         <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
-                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_piezeras" name="image" id="img_banner_piezeras">
+                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_ancho" name="image" id="img_banner_ancho">
                 </div>
                 <div class="image-upload">
-                    <label for="img_banner_5a">
+                    <label for="img_banner_5a_ancho">
                         <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
                     </label>
-                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_5a" name="image" id="img_banner_5a">
+                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_5a_ancho" name="image" id="img_banner_5a_ancho">
                 </div>
             {% end %}
             <div>
-                <img id="mlb_banner_5a" class="img-responsive lazy piezeras" src="{{ read_image(site.name + '_banner_5a', 1) }}" data-original="{{ read_image(site.name + '_banner_5a', 500) }}" />
+                <img id="mlb_banner_5a_ancho" class="img-responsive lazy ancho" src="{{ read_image(site.name + '_banner_5a_ancho', 1) }}" data-original="{{ read_image(site.name + '_banner_5a_ancho')}}" />
             </div>
             <!-- Info banner ancho -->
             <div class="info-product banner-secundario color-white">
                 <h2>
                     {% if is_admin %}
                         <span class="editabletext" text-id="{{ site.name + '_banner5_tit' }}" >
-                            <!-- {{ read_text(site.name + '_banner5_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
-                            AMBIENTES
+                            <!-- {{ read_text(site.name + '_banner5_tit') }}  (Esto quedo comentado para luego arreglar la version editable) EN ESTA SECCION YA NO VA TEXTO POR AHORA-->
                         </span>
                     {% else %}
-                        <!-- {{ read_text(site.name + '_banner5_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
-                        AMBIENTES
+                        <!-- {{ read_text(site.name + '_banner5_tit') }}  (Esto quedo comentado para luego arreglar la version editable) EN ESTA SECCION YA NO VA TEXTO POR AHORA-->
                     {% end %}
                 </h2>
-                <i>_______________________________</i>
+                <!--<i>_______________________________</i>-->
                 <p>
                     {% if is_admin %}
                         <span class="editabletext" text-id="{{ site.name + '_banner5_desc' }}">
-                            <!-- {{ read_text(site.name + '_banner5_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
-                            <p>CONOCE ESTE ESPACIO ESPECIALMENTE DE DISEÑADORAS DE AMBIENTES, QUE COMPARTEN SU TRABAJO CON NOSOTROS.</p>
+                            <!-- {{ read_text(site.name + '_banner5_desc') }}  (Esto quedo comentado para luego arreglar la version editable) EN ESTA SECCION YA NO VA TEXTO POR AHORA-->
                         </span>
                     {% else %}
-                        <!-- {{ read_text(site.name + '_banner5_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
-                        <p>CONOCE ESTE ESPACIO ESPECIALMENTE DE DISEÑADORAS DE AMBIENTES, QUE COMPARTEN SU TRABAJO CON NOSOTROS.</p>
+                        <!-- {{ read_text(site.name + '_banner5_desc') }}  (Esto quedo comentado para luego arreglar la version editable)  EN ESTA SECCION YA NO VA TEXTO POR AHORA-->
                     {% end %}
                 </p>
-                <a href="{{ site_base }}?tag=pieceras">
+                <!--<a href="{{ site_base }}?tag=pieceras">
                     <button type="button" class="btn">conocer</button>
-                </a>
+                </a>-->
             </div>
         </div>
     </div>
