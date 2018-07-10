@@ -942,10 +942,12 @@ ul.container-fluid-magle
         color: rgba(128, 128, 128, 0.62);
         font-size: 12px;
     }
-} 
+}
+
 @media (max-width: 1025px)
 {
-    .w3-btn, .w3-btn-block 
+    .w3-btn, 
+    .w3-btn-block 
     {
     border: none;
     display: inline-block;
@@ -969,15 +971,15 @@ ul.container-fluid-magle
 
     ::-webkit-scrollbar
     {
-      -webkit-appearance: none;
-      width: 10px;
+        -webkit-appearance: none;
+        width: 10px;
     }
 
     ::-webkit-scrollbar-thumb
     {
-      border-radius: 5px;
-      background-color: rgba(0,0,0,.5);
-      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+        border-radius: 5px;
+        background-color: rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
     }
 
     .navbar-default
