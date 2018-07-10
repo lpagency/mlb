@@ -1,6 +1,8 @@
 {% if tag==False %}
+    <!-- SLIDER -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
+            <!-- Slider 1 -->
             <div class="swiper-slide">
                 {% if is_admin %}
                     <div class="image-upload">
@@ -18,26 +20,37 @@
                 {% end %}
                 <img id="mlb_banner_1" class="show-hide lazy" src="{{ read_image(site.name + '_banner_1', 1) }}" data-original="{{ read_image(site.name + '_banner_1') }}" />
                 <img id="mlb_banner_1a" class="hide-show lazy" src="{{ read_image(site.name + '_banner_1a', 1) }}" data-original="{{ read_image(site.name + '_banner_1a') }}" />
+                <!-- Info slider 1 -->
                 <div class="info-product banner-principal">
                     <h2>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_banner1_tit' }}" >{{ read_text(site.name + '_banner1_tit') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_banner1_tit' }}" >
+                            <!-- {{ read_text(site.name + '_banner1_tit') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                            URBANO
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_banner1_tit') }}
+                            <!-- {{ read_text(site.name + '_banner1_tit') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                            URBANO
                         {% end %}
                     </h2>
                     <p>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_banner1_desc' }}">{{ read_text(site.name + '_banner1_desc') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_banner1_desc' }}">
+                                <!--{{ read_text(site.name + '_banner1_desc') }}(Esto quedo comentado para luego arreglar la version editable) -->
+
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_banner1_desc') }} 
+                            <!--{{ read_text(site.name + '_banner1_desc') }}(Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>El estilo urbano llega a partir de las necesidades que se requieren a diario. Complementa la rutina y el sentido de pertenencia a la ciudad.</p>
+                            <p>Creamos piezas únicas que entregan identidad a los espacios</p>
                         {% end %}
                     </p>
-                    <a href="{{ site_base }}?tag=cojines">
+                    <a href="{{ site_base }}?tag=urbano">
                         <button type="button" class="btn btn-banner">conocer</button>
                     </a>
                 </div>
             </div>
+            <!-- Slider 2 -->
             <div class="swiper-slide">
                 {% if is_admin %}
                     <div class="image-upload">
@@ -55,26 +68,38 @@
                 {% end %}
                 <img id="mlb_banner_9" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_9') }}" data-original="{{ read_image(site.name + '_banner_9') }}" />
                 <img id="mlb_banner_9a" class="img-responsive hide-show lazy" src="{{ read_image(site.name + '_banner_9a') }}" data-original="{{ read_image(site.name + '_banner_9a') }}" />
+                <!-- Info Slider 2 -->
                 <div class="info-product banner-principal banner-principal-product">
                     <h2>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_banner9_tit' }}" >{{ read_text(site.name + '_banner9_tit') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_banner9_tit' }}" >
+                                <!-- {{ read_text(site.name + '_banner9_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                                ANDINO
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_banner9_tit') }}
+                            <!-- {{ read_text(site.name + '_banner9_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            ANDINO
                         {% end %}
                     </h2>
                     <p>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_banner9_desc' }}">{{ read_text(site.name + '_banner9_desc') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_banner9_desc' }}">
+                                <!-- {{ read_text(site.name + '_banner9_desc') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                                El estilo andino nace con el fin de incorporar lo originario de la Cordillera de los Andes a los estándares del interiorismo.
+                                Creamos piezas únicas que entregan identidad a los espacios
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_banner9_desc') }} 
+                            <!-- {{ read_text(site.name + '_banner9_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>El estilo andino nace con el fin de incorporar lo originario de la Cordillera de los Andes a los estándares del interiorismo.</p>
+                            <p>Creamos piezas únicas que entregan identidad a los espacios</p>
                         {% end %}
                     </p>
-                    <a href="{{ site_base }}?tag=pieceras">
+                    <a href="{{ site_base }}?tag=andino">
                         <button type="button" class="btn">conocer</button>
                     </a>
                 </div>
             </div>
+            <!-- Slider 3 -->
             <div class="swiper-slide">
                 {% if is_admin %}
                     <div class="image-upload">
@@ -92,22 +117,35 @@
                 {% end %}
                 <img id="mlb_banner_10" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_10') }}" data-original="{{ read_image(site.name + '_banner_10') }}" />
                 <img id="mlb_banner_10a" class="img-responsive hide-show lazy" src="{{ read_image(site.name + '_banner_10a') }}" data-original="{{ read_image(site.name + '_banner_10a') }}" />
+                <!-- Info slider 3 -->
                 <div class="info-product banner-secundario">
                     <h2>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_banner10_tit' }}" >{{ read_text(site.name + '_banner10_tit') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_banner10_tit' }}" >
+                                <!-- {{ read_text(site.name + '_banner10_tit') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                                FUSIÓN
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_banner10_tit') }}
+                            <!-- {{ read_text(site.name + '_banner10_tit') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                            FUSIÓN
                         {% end %}
                     </h2>
                     <p>
                         {% if is_admin %}
-                            <span class="editabletext" text-id="{{ site.name + '_banner10_desc' }}">{{ read_text(site.name + '_banner10_desc') }}</span>
+                            <span class="editabletext" text-id="{{ site.name + '_banner10_desc' }}">
+                                <!-- {{ read_text(site.name + '_banner10_desc') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                                La mezcla y combinación perfecta de la cordillera y la ciudad dándole vida a los espacios con ambos mundos
+                                Creamos piezas únicas que entregan identidad a los espacios
+                            </span>
                         {% else %}
-                            {{ read_text(site.name + '_banner10_desc') }}
+                            <!-- {{ read_text(site.name + '_banner10_desc') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>La mezcla y combinación perfecta de la cordillera y la ciudad dándole vida a los espacios con ambos mundos</p>
+                            <p>Creamos piezas únicas que entregan identidad a los espacios</p>
                         {% end %}
                     </p>
-                    <button type="button" class="btn add-to-cart" product-id="7">conocer</button>
+                    <a href="{{ site_base }}?tag=fusion">
+                        <button type="button" class="btn">conocer</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -115,7 +153,9 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
+    <!-- GRILLA 3 BANNERS -->
     <div class="row cat-index">
+        <!-- Banner 1 -->
         <div class="col-sm-4 especial content-height">
             {% if is_admin %}
                 <div class="image-upload">
@@ -126,26 +166,37 @@
                 </div>
             {% end %}
             <img id="mlb_banner_2" src="{{ read_image(site.name + '_banner_2', 1) }}" data-original="{{ read_image(site.name + '_banner_2', 200) }}" class="img-responsive lazy display-img" alt="item">
+            <!--  Info Banner 1 -->
             <div class="info-product">
                 <h2>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner2_tit' }}" >{{ read_text(site.name + '_banner2_tit') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner2_tit' }}" >
+                            <!-- {{ read_text(site.name + '_banner2_tit') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>HISTORIA Y PROCESO</p>
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner2_tit') }}
-                    {% end %}</h2>
+                        <!-- {{ read_text(site.name + '_banner2_tit') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>HISTORIA Y PROCESO</p>
+                    {% end %}
+                </h2>
                 <i>_______________________________</i>
                 <p>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner2_desc' }}">{{ read_text(site.name + '_banner2_desc') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner2_desc' }}">
+                            {{ read_text(site.name + '_banner2_desc') }}
+                            CONOCE SOBRE LA HISTORIA Y EL PROCESO QUE EXISTE DETRÁS DE TODOS NUESTROS PRODUCTOS
+                        </span>
                     {% else %}
                         {{ read_text(site.name + '_banner2_desc') }}
+                        <p>CONOCE SOBRE LA HISTORIA Y EL PROCESO QUE EXISTE DETRÁS DE TODOS NUESTROS PRODUCTOS</p>
                     {% end %}
                 </p>
-                <a href="{{ site_base }}?tag=fusion">
+                <a href="{{ site_base }}/historia">
                     <button type="button" class="btn">conocer</button>
                 </a>
             </div>
         </div>
+        <!-- Banner 2 -->
         <div class="col-sm-4 especial content-height">
             {% if is_admin %}
                 <div class="image-upload">
@@ -156,26 +207,36 @@
                 </div>
             {% end %}
             <img id="mlb_banner_3" src="{{ read_image(site.name + '_banner_3', 1) }}" data-original="{{ read_image(site.name + '_banner_3', 200) }}" class="img-responsive lazy display-img" alt="item">
+            <!-- Info Banner 2 -->
             <div class="info-article">
                 <h2>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner3_tit' }}" >{{ read_text(site.name + '_banner3_tit') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner3_tit' }}" >
+                            <!-- {{ read_text(site.name + '_banner3_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>NOSOTROS</p>
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner3_tit') }}
+                        <!-- {{ read_text(site.name + '_banner3_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>NOSOTROS</p>
                     {% end %}
                 </h2>
                 <p>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner3_desc' }}">{{ read_text(site.name + '_banner3_desc') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner3_desc' }}">
+                            <!-- {{ read_text(site.name + '_banner3_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            LA HISTORIA DETRÁS DE MAGDALENA LE BLANC NACE EL AÑO 2005 BUSCANDO LA INTEGRACIÓN DEL TRABAJO CON LOS ARTESANOS
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner3_desc') }}
+                        <!-- {{ read_text(site.name + '_banner3_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>LA HISTORIA DETRÁS DE MAGDALENA LE BLANC NACE EL AÑO 2005 BUSCANDO LA INTEGRACIÓN DEL TRABAJO CON LOS ARTESANOS</p>
                     {% end %}
                 </p>
-                <a href="{{ site_base }}?tag=urbano">
+                <a href="{{ site_base }}/aboutus">
                     <button type="button" class="btn">conocer</button>
                 </a>
             </div>
         </div>
+        <!-- Banners 3 -->
         <div class="col-sm-4 especial content-height">
             {% if is_admin %}
                 <div class="image-upload">
@@ -186,28 +247,38 @@
                 </div>
             {% end %}
             <img id="mlb_banner_4" src="{{ read_image(site.name + '_banner_4', 1) }}" data-original="{{ read_image(site.name + '_banner_4', 200) }}" class="img-responsive lazy display-img" alt="item">
+            <!-- Info Banner 3 -->
             <div class="info-product color-white">
                 <h2>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner4_tit' }}" >{{ read_text(site.name + '_banner4_tit') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner4_tit' }}" >
+                            <!-- {{ read_text(site.name + '_banner4_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>MATERIALES Y CUIDADOS</p>
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner4_tit') }}
+                        <!-- {{ read_text(site.name + '_banner4_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>MATERIALES Y CUIDADOS</p>
                     {% end %}
                 </h2>
                 <i>_______________________________</i>
                 <p>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner4_desc' }}">{{ read_text(site.name + '_banner4_desc') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner4_desc' }}">
+                            <!-- {{ read_text(site.name + '_banner4_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>CONOCE TODO SOBRE LOS MATERIALES QUE TRABAJAMOS. LA LANA Y LA ALPACA SON SÓLO ALGUNOS DE ELLOS</p>
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner4_desc') }}
+                        <!-- {{ read_text(site.name + '_banner4_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>CONOCE TODO SOBRE LOS MATERIALES QUE TRABAJAMOS. LA LANA Y LA ALPACA SON SÓLO ALGUNOS DE ELLOS</p>
                     {% end %}
                 </p>
-                <a href="{{ site_base }}?tag=andino">
+                <a href="{{ site_base }}/materiales">
                     <button type="button" class="btn">conocer</button>
                 </a>
             </div>
         </div>
     </div>
+    <!-- BANNER ANCHO -->
     <div class="row cat-index-largo">
         <div class="col-sm-12 especial">
             {% if is_admin %}
@@ -227,20 +298,29 @@
             <div>
                 <img id="mlb_banner_5a" class="img-responsive lazy piezeras" src="{{ read_image(site.name + '_banner_5a', 1) }}" data-original="{{ read_image(site.name + '_banner_5a', 500) }}" />
             </div>
+            <!-- Info banner ancho -->
             <div class="info-product banner-secundario color-white">
                 <h2>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner5_tit' }}" >{{ read_text(site.name + '_banner5_tit') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner5_tit' }}" >
+                            <!-- {{ read_text(site.name + '_banner5_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            AMBIENTES
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner5_tit') }}
+                        <!-- {{ read_text(site.name + '_banner5_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                        AMBIENTES
                     {% end %}
                 </h2>
                 <i>_______________________________</i>
                 <p>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner5_desc' }}">{{ read_text(site.name + '_banner5_desc') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner5_desc' }}">
+                            <!-- {{ read_text(site.name + '_banner5_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>CONOCE ESTE ESPACIO ESPECIALMENTE DE DISEÑADORAS DE AMBIENTES, QUE COMPARTEN SU TRABAJO CON NOSOTROS.</p>
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner5_desc') }}
+                        <!-- {{ read_text(site.name + '_banner5_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>CONOCE ESTE ESPACIO ESPECIALMENTE DE DISEÑADORAS DE AMBIENTES, QUE COMPARTEN SU TRABAJO CON NOSOTROS.</p>
                     {% end %}
                 </p>
                 <a href="{{ site_base }}?tag=pieceras">
@@ -249,7 +329,9 @@
             </div>
         </div>
     </div>
+    <!-- Grilla 2 banners -->
     <div class="row cat-index-end">
+        <!-- Banner 1 -->
         <div class="col-sm-6 especial banner-50">
             {% if is_admin %}
                 <div class="image-upload">
@@ -266,30 +348,40 @@
                 </div>
             {% end %}
             <div>
-                <img id="mlb_banner_6" class="img-responsive show-hide mlb-img lazy" src="{{ read_image(site.name + '_banner_6', 1) }}" data-original="{{ read_image(site.name + '_banner_6', 500) }}" />
-                <img id="mlb_banner_6a" class="img-responsive hide-show mlb-img lazy" src="{{ read_image(site.name + '_banner_6a', 1) }}" data-original="{{ read_image(site.name + '_banner_6a', 500) }}" />
+                <img id="mlb_banner_6" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_6', 1) }}" data-original="{{ read_image(site.name + '_banner_6', 500) }}" />
+                <img id="mlb_banner_6a" class="img-responsive hide-show lazy" src="{{ read_image(site.name + '_banner_6a', 1) }}" data-original="{{ read_image(site.name + '_banner_6a', 500) }}" />
             </div>
+            <!-- Info banner 1 -->
             <div class="info-product">
                 <h2>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner6_tit' }}" >{{ read_text(site.name + '_banner6_tit') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner6_tit' }}" >
+                            <!-- {{ read_text(site.name + '_banner6_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>NOVEDADES</p>
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner6_tit') }}
+                        <!-- {{ read_text(site.name + '_banner6_tit') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>NOVEDADES</p>
                     {% end %}
                 </h2>
                 <i>_______________________________</i>
                 <p>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner6_desc' }}">{{ read_text(site.name + '_banner6_desc') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner6_desc' }}">
+                            <!-- {{ read_text(site.name + '_banner6_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>ENTÉRATE DE TODOS NUESTROS NUEVOS PRODUCTOS EN STOCK.</p>
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner6_desc') }}
+                        <!-- {{ read_text(site.name + '_banner6_desc') }}  (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>ENTÉRATE DE TODOS NUESTROS NUEVOS PRODUCTOS EN STOCK.</p>
                     {% end %}
                 </p>
-                <a href="{{ site_base }}?tag=cojines">
+                <a href="{{ site_base }}?tag=new">
                     <button type="button" class="btn">conocer</button>
                 </a>
             </div>
         </div>
+        <!-- Banner 2 -->
         <div class="col-sm-6 especial banner-50">
             {% if is_admin %}
                 <div class="image-upload">
@@ -306,25 +398,33 @@
                 </div>
             {% end %}
             <div>
-                <img id="mlb_banner_7" class="img-responsive show-hide mlb-img lazy" src="{{ read_image(site.name + '_banner_7', 1) }}" data-original="{{ read_image(site.name + '_banner_7', 500) }}" />
-                <img id="mlb_banner_7a" class="img-responsive hide-show mlb-img lazy" src="{{ read_image(site.name + '_banner_7a', 1) }}" data-original="{{ read_image(site.name + '_banner_7a', 500) }}" />
+                <img id="mlb_banner_7" class="img-responsive show-hide lazy" src="{{ read_image(site.name + '_banner_7', 1) }}" data-original="{{ read_image(site.name + '_banner_7', 500) }}" />
+                <img id="mlb_banner_7a" class="img-responsive hide-show lazy" src="{{ read_image(site.name + '_banner_7a', 1) }}" data-original="{{ read_image(site.name + '_banner_7a', 500) }}" />
             </div>
             <div class="info-article">
                 <h2>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner7_tit' }}" >{{ read_text(site.name + '_banner7_tit') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner7_tit' }}" >
+                            <!-- {{ read_text(site.name + '_banner7_tit') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>VENTA CORPORATIVA/PROYECTOS</p>
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner7_tit') }}
+                        <!-- {{ read_text(site.name + '_banner7_tit') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>VENTA CORPORATIVA / PROYECTOS</p>
                     {% end %}
                 </h2>
                 <p>
                     {% if is_admin %}
-                        <span class="editabletext" text-id="{{ site.name + '_banner7_desc' }}">{{ read_text(site.name + '_banner7_desc') }}</span>
+                        <span class="editabletext" text-id="{{ site.name + '_banner7_desc' }}">
+                            <!-- {{ read_text(site.name + '_banner7_desc') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                            <p>REVISA LOS PRODUCTOS QUE PODEMOS OFRECER A TU EMPRESA Y LOS PROYECTOS QUE HEMOS PARTICIPADO.</p>
+                        </span>
                     {% else %}
-                        {{ read_text(site.name + '_banner7_desc') }}
+                        <!-- {{ read_text(site.name + '_banner7_desc') }} (Esto quedo comentado para luego arreglar la version editable) -->
+                        <p>REVISA LOS PRODUCTOS QUE PODEMOS OFRECER A TU EMPRESA Y LOS PROYECTOS QUE HEMOS PARTICIPADO.</p>
                     {% end %}
                 </p>
-                <a href="{{ site_base }}/aboutus">
+                <a href="{{ site_base }}/cotiza_con_nosotros">
                     <button type="button" class="btn">conocer</button>
                 </a>
             </div>
