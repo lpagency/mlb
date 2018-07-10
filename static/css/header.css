@@ -965,7 +965,6 @@ ul.container-fluid-magle
         font-size: 12px;
     }
 
-
     .dropdown-menu
     {
         position: absolute;
@@ -1017,7 +1016,8 @@ ul.container-fluid-magle
 
 @media (max-width: 767px)
 {
-    .w3-btn, .w3-btn-block 
+    .w3-btn, 
+    .w3-btn-block 
     {
     border: none;
     display: inline-block;
@@ -1041,15 +1041,15 @@ ul.container-fluid-magle
 
     ::-webkit-scrollbar
     {
-      -webkit-appearance: none;
-      width: 10px;
+        -webkit-appearance: none;
+        width: 10px;
     }
 
     ::-webkit-scrollbar-thumb
     {
-      border-radius: 5px;
-      background-color: rgba(0,0,0,.5);
-      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+        border-radius: 5px;
+        background-color: rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
     }
 
     .navbar-default
