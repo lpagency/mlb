@@ -1,0 +1,165 @@
+{% extends "../base.html" %}
+
+{% block header %}
+    {% include '../home/header.html' %}
+{% end %}
+
+{% block body %}
+    <div id="wrap" class="productlist">
+        <div class="row">
+            <div class="col-sm-12 especial mlb-aboutus-header">
+                <h2>Materiales</h2>
+                <div class="col-sm-12 especial bkg"></div>
+                {% if is_admin %}
+                    <div class="image-upload" style="right:50px;">
+                        <label for="img_banner_materiales">
+                            <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
+                        </label>
+                        <input type="file" class="editableimage" image-id="{{ site.name }}_banner_materiales" name="image" id="img_banner_materiales" >
+                    <div class="image-upload" style="right:50px;">"
+                        <label for="img_banner_materiales_a">
+                            <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
+                        </label>
+                        <input type="file" class="editableimage" image-id="{{ site.name }}_banner_materiales_a" name="image" id="img_banner_materiales_a" >
+                    </div>
+                {% end %}
+                <img id="mlb_banner_materiales" class="img-responsive show-hide" src="{{ read_image(site.name + '_banner_materiales') }}" />
+                <img id="mlb_banner_materiales_a" class="img-responsive hide-show" src="{{ read_image(site.name + '_banner_materiales_a') }}" />
+            </div>
+        </div>
+    </div>
+    <div class="widget col-sm-12 especial profile-company">
+        <div class="col-sm-12 especial profile-foto-top">
+            <div class="profile-company-logo">
+                <img src="{{ read_image(site.name + '_banner_materiales') }}" alt="item">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center container-fluid-magle display-about-us">
+        <div class="row">
+            <div class="col-sm-8 mlb-text about-us-text">
+                <p> 
+                    {% if is_admin %}
+                        <p class="editabletext" text-id="{{ site.name + '_materiales_tit' }}" >{{ read_text(site.name + '_materiales_tit') }}</p>
+                    {% else %}
+                        {{ read_text(site.name + '_materiales_tit') }}
+                    {% end %}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-right container-fluid-magle about-us-text-parragraph-container">
+        <div class="row">
+            <div class="col-sm-6 mlb-text especial about-us-text-parragraph-row">
+                <div class="col-sm-12 especial" data-sr="enter left">
+                    <h2>
+                        {% if is_admin %}
+                            <span class="editabletext" text-id="{{ site.name + '_materiales_tit2' }}" >{{ read_text(site.name + '_materiales_tit2') }}</span>
+                        {% else %}
+                            {{ read_text(site.name + '_materiales_tit2') }}
+                        {% end %}</h2>
+                        <p>___________</p>
+                        <p>
+                            {% if is_admin %}
+                                <p class="editabletext" text-id="{{ site.name + '_materiales_desc2' }}" >{{ read_text(site.name + '_materiales_desc2') }}</p>
+                            {% else %}
+                                {{ read_text(site.name + '_materiales_desc2') }}
+                            {% end %}</p>
+                        </div>
+                        <div class="col-sm-12 especial" data-sr="enter left">
+                            <h2>
+                                {% if is_admin %}
+                                    <span class="editabletext" text-id="{{ site.name + '_materiales_tit3' }}" >{{ read_text(site.name + '_materiales_tit3') }}</span>
+                                {% else %}
+                                    {{ read_text(site.name + '_materiales_tit3') }}
+                                {% end %}
+                            </h2>
+                            <p>___________</p>
+                            <p>
+                            {% if is_admin %}
+                                <p class="editabletext" text-id="{{ site.name + '_materiales_desc3' }}" >{{ read_text(site.name + '_materiales_desc3') }}</p>
+                            {% else %}
+                                {{ read_text(site.name + '_materiales_desc3') }}
+                            {% end %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mlb-text especial" >
+                        {% if is_admin %}
+                            <div class="image-upload" style="right:50px;">
+                                <label for="img_banner_materiales2">
+                                    <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
+                                </label>
+                                <input type="file" class="editableimage" image-id="{{ site.name }}_banner_materiales2" name="image" id="img_banner_materiales2" >
+                            </div>
+                        {% end %}
+                        <img id="mlb_banner_materiales2" class="img-responsive show-hide" src="{{ read_image(site.name + '_banner_materiales2') }}" />
+                    </div>
+                </div>
+            </div>
+            <div class="productlist">
+                <div class="row">
+                    <div class="col-sm-12 especial mlb-aboutus-footer">
+                        <div class="col-sm-6 mlb-text about-us-text-white" data-sr="enter bottom, over 2s">
+                            <h2>
+                                {% if is_admin %}
+                                    <span class="editabletext" text-id="{{ site.name + '_materiales_tit4' }}" >{{ read_text(site.name + '_materiales_tit4') }}</span>
+                                {% else %}
+                                    {{ read_text(site.name + '_materiales_tit4') }}
+                                {% end %}
+                            </h2>
+                            <p>___________</p>
+                            <p>
+                                {% if is_admin %}
+                                    <p class="editabletext" text-id="{{ site.name + '_materiales_desc4' }}" >{{ read_text(site.name + '_materiales_desc4') }}</p>
+                                {% else %}
+                                    {{ read_text(site.name + '_materiales_desc4') }}
+                                {% end %}
+                            </p>
+                        </div>
+                        <div class="col-sm-12 especial bkg"></div>
+                        {% if is_admin %}
+                            <div class="image-upload" style="right:50px;">
+                                <label for="img_banner_materiales3">
+                                    <img class="change-image" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';" >
+                                </label>
+                                <input type="file" class="editableimage" image-id="{{ site.name }}_banner_materiales3" name="image" id="img_banner_materiales3" >
+                            </div>
+                            <div class="image-upload" style="right:50px;">
+                                <label for="img_banner_materiales3_a">
+                                    <img class="change-image hide-show" src="{{ site_base }}/{{ nocache_static }}/img/btn-edit.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit-hover.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/btn-edit.png';">
+                                </label>
+                                <input type="file" class="editableimage" image-id="{{ site.name }}_banner_materiales3_a" name="image" id="img_banner_materiales3_a" >
+                            </div>
+                        {% end %}
+                        <img id="mlb_banner_materiales3" class="img-responsive show-hide left-none" src="{{ read_image(site.name + '_banner_materiales3') }}"/>
+                        <img id="mlb_banner_materiales3_a" class="img-responsive hide-show left-none" src="{{ read_image(site.name + '_banner_materiales3_a') }}"/>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid text-center container-fluid-magle container-about-us">
+                <div class="row">
+                    <div class="col-sm-8 mlb-text about-us-text">
+                        <h2>
+                            {% if is_admin %}
+                                <span class="editabletext" text-id="{{ site.name + '_materiales_tit5' }}" >{{ read_text(site.name + '_materiales_tit5') }}</span>
+                            {% else %}
+                                {{ read_text(site.name + '_materiales_tit5') }}
+                            {% end %}
+                        </h2>
+                        <p>___________</p>
+                        <p>
+                            {% if is_admin %}
+                                <p class="editabletext" text-id="{{ site.name + '_materiales_desc5' }}" >{{ read_text(site.name + '_materiales_desc5') }}</p>
+                            {% else %}
+                                {{ read_text(site.name + '_materiales_desc5') }}
+                            {% end %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include '../content/footer.html' %}
+{% end %}
