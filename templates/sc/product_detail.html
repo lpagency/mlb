@@ -44,13 +44,13 @@
 
             // initialize ecommerce
             var facade = $(document).ecommerce('product_detail', {
-                'app_public': 3,
-                'site_id': 3,
+                'app_public': 'mlb',
+                'site_name': 'mlb',
                 'base_url': base_url,
                 'checkout_url': checkout_url,
                 'product_id': {{ product_id }},
                 'site_name': 'mlb',
-                onLoad: function(product) 
+                onLoad: function(product)
                 {
                     if (getCookie("stock") == "none")
                     {
