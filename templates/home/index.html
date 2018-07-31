@@ -15,7 +15,7 @@
 {% block javascript %}
 <script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/imageloader.js" ></script>
 <script type="text/javascript" src="{{ site_base }}/common/js/jquery.cookie.js"></script>
-<script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.js"></script>
+<script type="text/javascript" src="https://cdn.loadingplay.com/js/connect/1.0.0/bodegas.client.es5.js"></script>
 
 <div type="template" id="product_loading" style="display:none;" >
     <div class="spinner">
@@ -88,8 +88,8 @@
         // initialize ecommerce
         var facade = $('.products').ecommerce(
             {
-                'app_public' : 3,
-                'site_id': 3,
+                'app_public' : 'mlb',
+                'site_name': 'mlb',
                 'products_per_page' : 24,
                 'base_url' : base_url,
                 'checkout_url': checkout_url,
